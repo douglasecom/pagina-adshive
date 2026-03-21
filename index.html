@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AdsHive - Landing Pages de Alta Conversão</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-primary": "#9ecaff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed": "#ffdcc4",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-bright": "#f9f9f9",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface-dim": "#dadada",
+                        "surface-variant": "#e2e2e2",
+                        "surface-tint": "#0061a3",
+                        "on-primary-fixed": "#001d36",
+                        "inverse-surface": "#2f3131",
+                        "surface-container-low": "#f3f3f3",
+                        "on-primary-container": "#fdfcff",
+                        "secondary-container": "#fea619",
+                        "background": "#f9f9f9",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#684000",
+                        "primary-fixed-dim": "#9ecaff",
+                        "on-tertiary-container": "#fffbff",
+                        "on-tertiary-fixed": "#2f1400",
+                        "primary-container": "#0078c8",
+                        "secondary": "#855300",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error-container": "#93000a",
+                        "on-secondary-fixed-variant": "#653e00",
+                        "outline-variant": "#bfc7d4",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffddb8",
+                        "secondary-fixed-dim": "#ffb95f",
+                        "surface": "#f9f9f9",
+                        "on-surface-variant": "#404752",
+                        "primary-fixed": "#d1e4ff",
+                        "on-secondary-fixed": "#2a1700",
+                        "surface-container": "#eeeeee",
+                        "tertiary": "#8f4900",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#b45e00",
+                        "tertiary-fixed-dim": "#ffb781",
+                        "outline": "#707883",
+                        "on-background": "#1a1c1c",
+                        "primary": "#118EE9",
+                        "primary-hover": "#0d71ba",
+                        "on-tertiary-fixed-variant": "#703800",
+                        "on-primary-fixed-variant": "#00497d"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; color: #1a1c1c; }
+        .font-headline { font-family: 'Manrope', sans-serif; }
+        .glass-header { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+        .browser-shadow { box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-sm border-b border-slate-200/50">
+<div class="flex justify-between items-center px-8 max-w-7xl mx-auto h-16 lg:h-20">
+<img alt="AdsHive Logo" class="object-contain w-auto h-12 lg:h-16" src="https://lh3.googleusercontent.com/aida/ADBb0ugPzxowh4mu1n9XrW9O1kkja4EXrC4jWRVI1UIrWhnf73GizxYUW_sD_tqywz1T9BiyaGgojsullEi_rLgtze7V6m6523i-HkfxMW8jjtjXjGLP3IJt33tdV_sAuUFG5pLPe04T_l656aMCdEQ5TzMa2mhZ-ekcPqHoH2ALI4w_0YyRwdDPd8HRWF_PXHVcsbfIMpwY23sTqU_xtEPp783M0Aoqx55jkUJCR366MWMfqaGRMRy-aw6qaOs8rST9Mc9stRnNcNjJDg"/>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Manrope'] font-semibold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-[#118EE9] transition-colors" href="#portfolio">Portfólio</a>
+<a class="font-['Manrope'] font-semibold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-[#118EE9] transition-colors" href="#benefits">Benefícios</a>
+<a class="font-['Manrope'] font-semibold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-[#118EE9] transition-colors" href="#plans">Preços</a>
+<a class="font-['Manrope'] font-semibold tracking-tight text-sm text-slate-600 dark:text-slate-400 hover:text-[#118EE9] transition-colors" href="#contact">Contato</a>
+<a class="bg-[#FF8C00] hover:bg-[#E67E00] text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all transform active:scale-95 shadow-lg shadow-orange-500/20" href="https://wa.me/5531996861334">Garantir Minha Vaga</a>
+</div>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-16 lg:pt-20">
+<!-- Hero Section -->
+<section class="px-8 py-8 lg:py-16 max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-xs font-bold mb-6 tracking-widest uppercase">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">timer</span>
+                Oferta Exclusiva: Próximos 5 clientes
+            </div>
+<h1 class="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight text-on-surface mb-8">
+                Landing Page de Alta Conversão a partir de <span class="text-[#FF8C00]">R$ 97,00</span>
+</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-2xl mb-10 font-body">
+                Transforme visitantes em clientes com um design editorial de alto padrão. Estrutura otimizada para vendas, carregamento ultra-rápido e foco total em resultados para o seu negócio.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="inline-flex items-center justify-center px-8 py-4 bg-[#FF8C00] hover:bg-[#E67E00] text-white font-bold rounded-xl text-lg shadow-xl shadow-orange-500/30 transition-all transform hover:-translate-y-1" href="#plans">
+                    Ver Planos e Preços
+                    <span class="material-symbols-outlined ml-2">trending_up</span>
+</a>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-surface-container-highest text-[#FF8C00] font-bold rounded-xl text-lg hover:bg-surface-container-high transition-all" href="#portfolio">
+                    Ver Exemplos
+                </a>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl shadow-orange-500/10 border-4 border-white aspect-square">
+<img alt="Modern high conversion landing page design preview" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ujLKHQILfvY5atJIzZiPUoYC2gi74o5Jy4z15gxZJPdPSnfjyf_4SQK_7nUw4X1Y-L4xDNNjXXg-peMWB5HFcQMyFRAoEjyp-YrvBjtFF7_dqCTwl7tghcJdVNt9RjpiUmaVfgyvbnlvOl3LRDQPvhI-NmBNBJGc9zYKLSO_-bY9Riu-dPihVAJ4X5tdFTJqvqMIbakmnVuzHvq2Px3eB8p6nNDF0AHKEvghg-ylN9JMzCkJSZRdVxlTuS_yuF-L2N6B4rfbX6GsQ"/>
+</div>
+<div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-orange-500/10 rounded-full blur-3xl"></div>
+</div>
+</section>
+<!-- Why AdsHive? (Bento Grid) -->
+<section class="py-24 bg-surface-container-low" id="benefits">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-4">Por que escolher a AdsHive?</h2>
+<p class="text-on-surface-variant max-w-xl">Não criamos apenas sites. Criamos máquinas de vendas estruturadas sob os pilares da persuasão e do design premium.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Bento Box 1 -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-3xl border border-outline-variant/20 flex flex-col justify-between">
+<div class="w-16 h-16 bg-[#118EE9]/5 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-[#118EE9] text-3xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold font-headline mb-4 text-[#118EE9]">Velocidade que Converte</h3>
+<p class="text-on-surface-variant leading-relaxed">Páginas que carregam em menos de 2 segundos. Reduza sua taxa de rejeição e melhore o ROI das suas campanhas de tráfego pago instantaneamente.</p>
+</div>
+</div>
+<!-- Bento Box 2 -->
+<div class="bg-secondary-fixed p-10 rounded-3xl flex flex-col justify-between text-on-secondary-fixed">
+<div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-3xl">smartphone</span>
+</div>
+<div>
+<h3 class="text-2xl font-bold font-headline mb-4">100% Responsivo</h3>
+<p class="opacity-80">Experiência perfeita em todos os dispositivos, com foco total no comportamento do usuário mobile.</p>
+</div>
+</div>
+<!-- Bento Box 3 -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl border border-outline-variant/20">
+<div class="w-16 h-16 bg-[#118EE9]/5 rounded-2xl flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-[#118EE9] text-3xl">psychology</span>
+</div>
+<h3 class="text-2xl font-bold font-headline mb-4 text-[#118EE9]">Neuromarketing</h3>
+<p class="text-on-surface-variant">Copywriting e elementos visuais estrategicamente posicionados para guiar o olhar do cliente para a ação.</p>
+</div>
+<!-- Bento Box 4 -->
+<div class="md:col-span-2 bg-inverse-surface p-10 rounded-3xl text-inverse-on-surface flex flex-col md:flex-row gap-8 items-center">
+<div class="flex-1">
+<h3 class="text-2xl font-bold font-headline mb-4">Suporte &amp; Agilidade</h3>
+<p class="opacity-70">Não precisa ter experiência. Oferecemos entrega rápida e suporte direto via WhatsApp para que você foque apenas em vender.</p>
+</div>
+<div class="flex gap-2">
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">speed</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Pricing Table -->
+<section class="py-24 bg-white" id="plans">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-6">Escolha o Plano Ideal</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Soluções sob medida para o estágio atual do seu negócio digital.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Plan 1: Básico -->
+<div class="bg-slate-50 p-8 rounded-[2rem] border border-slate-200 flex flex-col">
+<h3 class="text-xl font-bold font-headline mb-2">Básico</h3>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-sm font-bold text-on-surface-variant">R$</span>
+<span class="text-4xl font-black text-on-surface">97</span>
+</div>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[#FF8C00] text-lg">check_circle</span>
+                            Landing simples e direta
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[#FF8C00] text-lg">check_circle</span>
+                            1 seção estratégica
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[#FF8C00] text-lg">check_circle</span>
+                            Ideal para iniciantes
+                        </li>
+</ul>
+<a class="w-full py-4 text-center bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-surface-variant transition-colors" href="https://wa.me/5531996861334?text=Olá! Gostaria de saber mais sobre o Plano Básico de R$ 97.">
+                        Começar Agora
+                    </a>
+</div>
+<!-- Plan 2: Profissional (Featured) -->
+<div class="bg-[#FF8C00] p-8 rounded-[2rem] border-2 border-[#FF8C00] shadow-2xl shadow-orange-500/30 flex flex-col relative transform lg:-translate-y-4 text-white">
+<div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-white text-[#FF8C00] text-[10px] font-black uppercase tracking-widest rounded-full shadow-md">
+                        MAIS ESCOLHIDO
+                    </div>
+<h3 class="text-xl font-bold font-headline mb-2">Profissional</h3>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-sm font-bold text-white/80">R$</span>
+<span class="text-4xl font-black text-white">197</span>
+</div>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center gap-3 text-sm text-white">
+<span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Estrutura de vendas completa
+                        </li>
+<li class="flex items-center gap-3 text-sm text-white">
+<span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Design altamente estratégico
+                        </li>
+<li class="flex items-center gap-3 text-sm text-white">
+<span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Múltiplas seções de conversão
+                        </li>
+<li class="flex items-center gap-3 text-sm text-white">
+<span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                            Melhor custo-benefício
+                        </li>
+</ul>
+<a class="w-full py-4 text-center bg-white text-[#FF8C00] font-bold rounded-xl shadow-lg hover:bg-slate-50 transition-all" href="https://wa.me/5531996861334?text=Olá! Tenho interesse no Plano Profissional de R$ 197.">
+                        Garantir Plano Profissional
+                    </a>
+</div>
+<!-- Plan 3: Premium -->
+<div class="bg-slate-50 p-8 rounded-[2rem] border border-slate-200 flex flex-col">
+<h3 class="text-xl font-bold font-headline mb-2">Premium</h3>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-sm font-bold text-on-surface-variant">R$</span>
+<span class="text-4xl font-black text-on-surface">397</span>
+</div>
+<ul class="space-y-4 mb-10 flex-1">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[#FF8C00] text-lg">check_circle</span>
+                            Copywriter persuasivo dedicado
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[#FF8C00] text-lg">check_circle</span>
+                            Gatilhos mentais avançados
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[#FF8C00] text-lg">check_circle</span>
+                            Integrações completas (Pixel/API)
+                        </li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[#FF8C00] text-lg">check_circle</span>
+                            Foco total em escala de anúncios
+                        </li>
+</ul>
+<a class="w-full py-4 text-center bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-surface-variant transition-colors" href="https://wa.me/5531996861334?text=Olá! Quero o Plano Premium de R$ 397 para escala máxima.">
+                        Começar Agora
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Interactive Portfolio -->
+<section class="py-24 bg-surface" id="portfolio">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-6">Nosso Portfólio Interativo</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Explore alguns de nossos projetos reais. Clique e interaja diretamente com as interfaces que desenvolvemos.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden browser-shadow border border-outline-variant/10 group-hover:-translate-y-2 transition-transform duration-500">
+<div class="bg-surface-container p-3 flex items-center gap-2">
+<div class="flex gap-1.5">
+<div class="w-3 h-3 rounded-full bg-error/40"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container/40"></div>
+<div class="w-3 h-3 rounded-full bg-orange-500/20"></div>
+</div>
+<div class="flex-1 mx-4 bg-surface-container-lowest rounded py-1 px-3 text-[10px] text-on-surface-variant truncate">colormatch.page.gd/tea/</div>
+</div>
+<div class="aspect-[9/16] lg:aspect-square overflow-hidden bg-white">
+<iframe class="w-full h-full border-none" loading="lazy" src="https://colormatch.page.gd/tea/"></iframe>
+</div>
+</div>
+<h4 class="mt-6 font-bold text-lg font-headline text-[#118EE9]">Tea House Concept</h4>
+</div>
+<!-- Project 2 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden browser-shadow border border-outline-variant/10 group-hover:-translate-y-2 transition-transform duration-500">
+<div class="bg-surface-container p-3 flex items-center gap-2">
+<div class="flex gap-1.5">
+<div class="w-3 h-3 rounded-full bg-error/40"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container/40"></div>
+<div class="w-3 h-3 rounded-full bg-orange-500/20"></div>
+</div>
+<div class="flex-1 mx-4 bg-surface-container-lowest rounded py-1 px-3 text-[10px] text-on-surface-variant truncate">colormatch.page.gd/geladinhogourmet/</div>
+</div>
+<div class="aspect-[9/16] lg:aspect-square overflow-hidden bg-white">
+<iframe class="w-full h-full border-none" loading="lazy" src="https://colormatch.page.gd/geladinhogourmet/"></iframe>
+</div>
+</div>
+<h4 class="mt-6 font-bold text-lg font-headline text-[#118EE9]">Geladinho Gourmet</h4>
+</div>
+<!-- Project 3 -->
+<div class="group">
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden browser-shadow border border-outline-variant/10 group-hover:-translate-y-2 transition-transform duration-500">
+<div class="bg-surface-container p-3 flex items-center gap-2">
+<div class="flex gap-1.5">
+<div class="w-3 h-3 rounded-full bg-error/40"></div>
+<div class="w-3 h-3 rounded-full bg-secondary-container/40"></div>
+<div class="w-3 h-3 rounded-full bg-orange-500/20"></div>
+</div>
+<div class="flex-1 mx-4 bg-surface-container-lowest rounded py-1 px-3 text-[10px] text-on-surface-variant truncate">colormatch.page.gd/ciliospoderosos/</div>
+</div>
+<div class="aspect-[9/16] lg:aspect-square overflow-hidden bg-white">
+<iframe class="w-full h-full border-none" loading="lazy" src="https://colormatch.page.gd/ciliospoderosos/"></iframe>
+</div>
+</div>
+<h4 class="mt-6 font-bold text-lg font-headline text-[#118EE9]">Cílios Poderosos</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div class="max-w-xl">
+<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-4">Quem já decolou com a AdsHive</h2>
+<p class="text-on-surface-variant">O sucesso dos nossos clientes é a nossa melhor vitrine.</p>
+</div>
+<div class="flex items-center gap-2 text-[#118EE9] font-bold">
+<span class="text-4xl">4.9/5.0</span>
+<div class="flex flex-col text-[10px] leading-tight uppercase tracking-widest text-on-surface-variant">
+<span>Média de</span>
+<span>Satisfação</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+<div class="flex gap-1 text-[#FF8C00] mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface font-medium leading-relaxed mb-8 italic">"Minha conversão aumentou 3x depois da nova página. O investimento se pagou em menos de 48 horas de anúncios rodando!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200"></div>
+<div>
+<h5 class="font-bold text-on-surface">Ricardo Mendes</h5>
+<span class="text-xs text-on-surface-variant">CEO, Mendes Cosméticos</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+<div class="flex gap-1 text-[#FF8C00] mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface font-medium leading-relaxed mb-8 italic">"Fiquei impressionada com o design. Parece que contratei uma agência de SP que cobraria 10x mais. O suporte via WhatsApp é excelente."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200"></div>
+<div>
+<h5 class="font-bold text-on-surface">Mariana Silva</h5>
+<span class="text-xs text-on-surface-variant">Especialista em Cílios</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+<div class="flex gap-1 text-[#FF8C00] mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-on-surface font-medium leading-relaxed mb-8 italic">"O AdsHive entendeu exatamente o que eu precisava. O processo foi rápido e o resultado final é de uma autoridade absurda."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200"></div>
+<div>
+<h5 class="font-bold text-on-surface">Lucas Ferraz</h5>
+<span class="text-xs text-on-surface-variant">Infoprodutor Digital</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 px-8 overflow-hidden relative" id="contact">
+<div class="max-w-4xl mx-auto bg-[#FF8C00] rounded-[3rem] p-12 lg:p-20 text-center relative z-10 shadow-2xl shadow-orange-500/40">
+<div class="inline-block px-6 py-2 bg-white/20 rounded-full text-white text-sm font-bold mb-8 uppercase tracking-widest backdrop-blur-sm">
+                Apenas 5 vagas disponíveis esta semana
+            </div>
+<h2 class="text-4xl lg:text-6xl font-extrabold font-headline text-white mb-8 tracking-tighter">Pronto para transformar seu negócio?</h2>
+<p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto">Sua Landing Page profissional com design estratégico e alta performance. Comece a vender hoje mesmo.</p>
+<div class="flex flex-col items-center gap-6">
+<a class="inline-flex items-center justify-center px-10 py-5 bg-white text-[#FF8C00] font-black rounded-2xl text-2xl shadow-2xl hover:scale-105 transition-all uppercase" href="https://wa.me/5531996861334">
+                    QUERO MINHA LANDING PAGE AGORA
+                </a>
+<div class="flex items-center gap-2 text-white/70 text-sm font-medium">
+<span class="material-symbols-outlined text-sm">lock</span>
+                    Pagamento Seguro via Cartão ou Pix
+                </div>
+</div>
+</div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-6xl aspect-square bg-orange-500/5 rounded-full blur-3xl -z-0"></div>
+</section>
+<!-- Lead Capture Form -->
+<section class="py-24 bg-surface-container-lowest" id="lead-form">
+<div class="max-w-4xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-6">Solicite um Orçamento Personalizado</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Preencha os dados abaixo e nossa equipe entrará em contato para planejar sua estratégia de vendas.</p>
+</div>
+<form action="mailto:douglasbateriacma@gmail.com" class="bg-white p-8 lg:p-12 rounded-[2.5rem] shadow-xl border border-outline-variant/10 grid grid-cols-1 md:grid-cols-2 gap-6" enctype="text/plain" method="POST">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold font-headline text-on-surface" for="name">Nome Completo</label>
+<input class="w-full px-5 py-4 bg-surface-container-low border-transparent rounded-xl focus:border-[#118EE9] focus:ring-2 focus:ring-[#118EE9]/20 transition-all text-on-surface" id="name" name="Nome" placeholder="Seu nome aqui" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold font-headline text-on-surface" for="email">E-mail Profissional</label>
+<input class="w-full px-5 py-4 bg-surface-container-low border-transparent rounded-xl focus:border-[#118EE9] focus:ring-2 focus:ring-[#118EE9]/20 transition-all text-on-surface" id="email" name="Email" placeholder="contato@empresa.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold font-headline text-on-surface" for="whatsapp">WhatsApp</label>
+<input class="w-full px-5 py-4 bg-surface-container-low border-transparent rounded-xl focus:border-[#118EE9] focus:ring-2 focus:ring-[#118EE9]/20 transition-all text-on-surface" id="whatsapp" name="WhatsApp" placeholder="(00) 00000-0000" required="" type="tel"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-bold font-headline text-on-surface" for="project-type">Tipo de Projeto</label>
+<select class="w-full px-5 py-4 bg-surface-container-low border-transparent rounded-xl focus:border-[#118EE9] focus:ring-2 focus:ring-[#118EE9]/20 transition-all text-on-surface" id="project-type" name="Plano">
+<option value="Basico">Plano Básico (R$ 97)</option>
+<option selected="" value="Profissional">Plano Profissional (R$ 197)</option>
+<option value="Premium">Plano Premium (R$ 397)</option>
+</select>
+</div>
+<div class="flex flex-col gap-2 md:col-span-2">
+<label class="text-sm font-bold font-headline text-on-surface" for="description">Descrição do Projeto</label>
+<textarea class="w-full px-5 py-4 bg-surface-container-low border-transparent rounded-xl focus:border-[#118EE9] focus:ring-2 focus:ring-[#118EE9]/20 transition-all text-on-surface min-h-[120px]" id="description" name="Descricao" placeholder="Conte um pouco sobre seu negócio e seus objetivos..." required=""></textarea>
+</div>
+<div class="md:col-span-2 mt-4">
+<button class="w-full py-5 bg-[#FF8C00] hover:bg-[#E67E00] text-white font-black rounded-2xl text-xl shadow-xl shadow-orange-500/30 transition-all transform hover:-translate-y-1 active:scale-95 uppercase" type="submit">
+                        Enviar Solicitação agora
+                    </button>
+</div>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200/20 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-6">
+<div class="flex flex-col gap-2">
+<span class="text-xl font-black text-slate-900 dark:text-white font-headline">AdsHive</span>
+<p class="font-['Inter'] text-sm leading-6 text-slate-500 max-w-xs">Especialistas em performance e design de alta conversão para negócios digitais.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-[#118EE9] dark:text-slate-400 hover:underline decoration-[#118EE9] underline-offset-4 transition-all duration-300" href="#">Termos de Uso</a>
+<a class="text-slate-500 hover:text-[#118EE9] dark:text-slate-400 hover:underline decoration-[#118EE9] underline-offset-4 transition-all duration-300" href="#">Política de Privacidade</a>
+<a class="text-slate-500 hover:text-[#118EE9] dark:text-slate-400 hover:underline decoration-[#118EE9] underline-offset-4 transition-all duration-300" href="https://wa.me/5531996861334">Suporte</a>
+</div>
+<div class="text-slate-500 text-sm">
+            © 2024 AdsHive. Todos os direitos reservados.
+        </div>
+</div>
+</footer>
+</body></html>
