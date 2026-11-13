@@ -1,480 +1,399 @@
-<!DOCTYPE html>
-
-<html lang="pt-BR"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>AdsHive - Landing Pages de Alta Conversão</title>
-<link href="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Y6_fM6Aqnchb3Yc-lc61l5gGpYwaRqEqlHrdCwin69WZ86M9MM_9V8ae4KjQ7JtZBkYU9OzkWjuqoWIvQS50q6z6T39VbriesGvDDIEno4A_COk7EDWZkZsuVSRxVqSjPBZQV9BcGDomQn1GRmqvI12bbxGho1ZOdPb2t_72DaGGs20LC4C2gwdcSrU3v939gVa7zJpL-JT7_IEgtDa0Hj_PVSBUu1imuy7OagtV8NPgdfZ7E0XBbd3jrniNPCob9P5f1lb2GCc" rel="icon" type="image/png"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "on-tertiary": "#4e2500",
-                        "tertiary-fixed-dim": "#ffb781",
-                        "on-secondary-fixed-variant": "#6b3b00",
-                        "on-primary-fixed-variant": "#00497d",
-                        "on-secondary-container": "#4c2800",
-                        "on-background": "#e1e2eb",
-                        "on-primary-fixed": "#001d36",
-                        "surface-container-highest": "#32353c",
-                        "secondary-fixed-dim": "#ffb875",
-                        "on-secondary": "#4b2800",
-                        "on-primary-container": "#002b4d",
-                        "surface": "#10131a",
-                        "outline-variant": "#404752",
-                        "inverse-surface": "#e1e2eb",
-                        "surface-container-low": "#191c22",
-                        "on-tertiary-fixed-variant": "#703800",
-                        "on-tertiary-fixed": "#2f1400",
-                        "on-tertiary-container": "#442000",
-                        "outline": "#8a919d",
-                        "surface-tint": "#9ecaff",
-                        "tertiary-container": "#dc760d",
-                        "inverse-primary": "#0061a3",
-                        "on-error": "#690005",
-                        "error-container": "#93000a",
-                        "tertiary": "#ffb781",
-                        "surface-container-high": "#272a31",
-                        "surface-variant": "#32353c",
-                        "secondary": "#ffb875",
-                        "on-surface": "#e1e2eb",
-                        "primary-container": "#2395f0",
-                        "on-error-container": "#ffdad6",
-                        "tertiary-fixed": "#ffdcc4",
-                        "primary-fixed": "#d1e4ff",
-                        "on-surface-variant": "#bfc7d4",
-                        "primary": "#A855F7",
-                        "surface-dim": "#10131a",
-                        "primary-fixed-dim": "#A855F7",
-                        "error": "#ffb4ab",
-                        "surface-container": "#1d2026",
-                        "secondary-fixed": "#ffdcc0",
-                        "background": "#10131a",
-                        "surface-container-lowest": "#0b0e14",
-                        "on-secondary-fixed": "#2d1600",
-                        "on-primary": "#003258",
-                        "surface-bright": "#363940",
-                        "secondary-container": "#e08100",
-                        "inverse-on-surface": "#2e3037"
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    fontFamily: {
-                        "headline": ["Manrope"],
-                        "display": ["Manrope"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    },
-                },
-            },
-        }
-    </script>
+<!DOCTYPE html><html class="dark overflow-hidden" lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport">
+<meta content="web_standard" name="shell-type">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <style>
-        body { font-family: 'Inter', sans-serif; background-color: #10131a; color: #e1e2eb; }
-        .font-headline { font-family: 'Manrope', sans-serif; }
-        .glass-header { background: rgba(16, 19, 26, 0.8); backdrop-filter: blur(20px); }
-        .browser-shadow { box-shadow: 0 20px 50px rgba(0,0,0,0.3); }
-        details[open] summary span.rotate-icon { transform: rotate(180deg); }
-        summary::-webkit-details-marker { display: none; }
-        .neon-glow { box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); }
-        .neon-glow-strong { box-shadow: 0 0 35px rgba(168, 85, 247, 0.6); }
-        .neon-border { border-color: rgba(168, 85, 247, 0.5); }
-    </style>
+    @layer base {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #080311;
+      }
+      body {
+        overscroll-behavior: none;
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-dark": "#080311",
+            "card-bg": "#120820",
+            "brand-purple": "#6E0ED7",
+            "brand-purple-hover": "#9327E7",
+            "neon-pink": "#DB65F5",
+            "border-purple": "#581198",
+            "text-secondary": "#B9AFC4"
+          },
+          fontFamily: {
+            "body-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "display": ["Plus Jakarta Sans"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"]
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body class="bg-background text-on-background selection:bg-primary selection:text-white">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md shadow-sm border-b border-outline-variant/20">
-<div class="flex justify-between items-center px-8 max-w-7xl mx-auto h-16 lg:h-20">
-<img alt="AdsHive Logo" class="object-contain w-auto h-12 lg:h-16 py-2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Y6_fM6Aqnchb3Yc-lc61l5gGpYwaRqEqlHrdCwin69WZ86M9MM_9V8ae4KjQ7JtZBkYU9OzkWjuqoWIvQS50q6z6T39VbriesGvDDIEno4A_COk7EDWZkZsuVSRxVqSjPBZQV9BcGDomQn1GRmqvI12bbxGho1ZOdPb2t_72DaGGs20LC4C2gwdcSrU3v939gVa7zJpL-JT7_IEgtDa0Hj_PVSBUu1imuy7OagtV8NPgdfZ7E0XBbd3jrniNPCob9P5f1lb2GCc"/>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-headline font-semibold tracking-tight text-sm text-on-surface-variant hover:text-primary transition-colors" href="#portfolio">Portfólio</a>
-<a class="font-headline font-semibold tracking-tight text-sm text-on-surface-variant hover:text-primary transition-colors" href="#benefits">Diferenciais</a>
-<a class="font-headline font-semibold tracking-tight text-sm text-on-surface-variant hover:text-primary transition-colors" href="#guarantee">Compromisso</a>
-<a class="font-headline font-semibold tracking-tight text-sm text-on-surface-variant hover:text-primary transition-colors" href="#plans">Preços</a>
-<a class="bg-primary text-white hover:bg-primary/80 px-6 py-2.5 rounded-full font-bold text-sm transition-all transform active:scale-95 shadow-lg shadow-primary/20" href="https://wa.me/5531996861334">Garantir Minha Vaga</a>
+<body class="bg-[#080311] font-body-md text-white antialiased selection:bg-[#DB65F5] selection:text-[#080311] overflow-hidden">
+<!-- HEADER -->
+<header class="fixed top-0 left-0 right-0 w-full z-50 bg-[#080311]/85 backdrop-blur-xl border-b border-[#581198]/40 shadow-[0_4px_30px_rgba(110,14,215,0.15)]">
+<div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<img alt="AdsHive Logo" class="w-11 h-11 object-contain rounded-full shadow-[0_0_15px_rgba(219,101,245,0.4)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOlPbSazhK6DUFkIONzzVHXicddsyb-NijbXBYCpjkxmuP0nD7H9jTqKtQyArAYP3eNPFlztbEWkPTLAcNyFJGS3mCfMi76Vor5HohkqK12W6YXf94Qz4AKe_NY4MOVEHCYbNqrorEneMlho8gC8I6H3Nj9V2Zp23ZosQE-JIUCM4FzvwNEi5Q_mKLSEyKn8VhY0Os7sVEgvJ_cC-B-YAo1OoG12Tj6UpYMytnzXEDI5vLYeH0Zit-GA">
+<span class="font-headline-sm text-xl tracking-tight font-extrabold text-white">Ads<span class="text-[#DB65F5]">Hive</span></span>
 </div>
-<button class="md:hidden text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
+<nav class="hidden lg:flex items-center gap-2">
+<a aria-current="page" class="px-3.5 py-2 font-label-md text-sm text-[#DB65F5] bg-[#120820] border border-[#581198]/50 rounded-lg transition-colors" href="#">Início</a>
+<a class="px-3.5 py-2 font-label-md text-sm text-[#B9AFC4] hover:text-white transition-colors" href="#vantagens">Benefícios</a>
+<a class="px-3.5 py-2 font-label-md text-sm text-[#B9AFC4] hover:text-white transition-colors" href="#vantagens">Vantagens</a>
+<a class="px-3.5 py-2 font-label-md text-sm text-[#B9AFC4] hover:text-white transition-colors" href="#planos">Planos &amp; Preços</a>
+<a class="px-3.5 py-2 font-label-md text-sm text-[#B9AFC4] hover:text-white transition-colors" href="#portfolio">Portfólio</a>
+<a class="px-3.5 py-2 font-label-md text-sm text-[#B9AFC4] hover:text-white transition-colors" href="#faq">FAQ</a>
 </nav>
-<main class="pt-16 lg:pt-20">
-<!-- Hero Section -->
-<section class="px-8 py-12 lg:py-24 max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/20 text-primary border border-primary/30 text-xs font-bold mb-6 tracking-widest uppercase">
-<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">bolt</span>
-                Esta semana: 3 vagas restantes
-            </div>
-<h1 class="text-5xl lg:text-7xl font-extrabold font-headline leading-[1.1] tracking-tight text-on-surface mb-8">
-                Landing Page de Alta Conversão com <span class="text-primary">Estratégia Premium</span>
-</h1>
-<p class="text-lg text-on-surface-variant leading-relaxed max-w-2xl mb-6 font-body">
-                Transforme visitantes em clientes com um design editorial de alto padrão. Atendemos no máximo 10 projetos por semana para garantir entrega em 72h.
-            </p>
-<!-- Tripwire Offer -->
-<div class="bg-surface-container-high p-6 rounded-2xl border-2 neon-border neon-glow-strong mb-10 max-w-xl">
-<h3 class="text-primary font-bold mb-2 flex items-center gap-2">
-<span class="material-symbols-outlined">analytics</span>
-                    Nova Oferta: Diagnóstico de Conversão
-                </h3>
-<p class="text-sm text-on-surface-variant mb-4">
-                    Pague <strong>R$ 1 via Pix</strong>, receba um preview real da sua primeira seção e uma call de 10min via WhatsApp. O valor é abatido do plano escolhido depois.
-                </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a class="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-xl text-lg shadow-xl shadow-primary/30 transition-all transform hover:-translate-y-1" href="https://wa.me/5531996861334?text=Quero o Diagnóstico de Conversão por R$1">
-                        Diagnóstico por R$ 1
-                        <span class="material-symbols-outlined ml-2">payments</span>
-</a>
-<a class="inline-flex items-center justify-center px-8 py-4 bg-surface-container-highest text-primary font-bold rounded-xl text-lg hover:bg-surface-variant transition-all border border-primary/20" href="#plans">
-                        Ver Planos
-                    </a>
-</div>
-<p class="mt-4 text-[10px] text-on-surface-variant flex items-center gap-1 uppercase tracking-wider font-bold">
-<span class="material-symbols-outlined text-xs">redeem</span>
-                    Bônus: Fechou até domingo? Ganhe instalação de Pixel + evento de Purchase grátis.
-                </p>
-</div>
-<p class="text-sm font-medium text-on-surface-variant flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-sm">verified</span>
-                Já entregamos mais de 150 páginas para negócios de Minas Gerais e todo o Brasil.
-            </p>
-</div>
-<div class="lg:col-span-5 relative">
-<div class="relative z-10 rounded-2xl overflow-hidden neon-glow-strong border-4 border-surface-container-highest aspect-square">
-<img alt="Modern high conversion landing page design preview" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg-L24BDiijXrnzxFG3hLTCpCb7qbXU5MHaHRaWzsx1BqA6WblnBz1ORKdpXii0ZxjVYZb4JrPwUjk26Fr2GVb7JWSrHKtyGPTNkM5TyZocOyoX5dq-cakE1KFwU9hnftHCMDAYGzOpnSy-59SRCXhNpjhQSwCzYuj4mpKE51q7mhZfCQaZU9DYZfAi63zMe05Q4MpV4C8oEfI5GMge5X_LxzpUB139BjBQ8PGjanpdhVtpS83hmGMkaVool3v35lvCBe_8CoNvI4"/>
-</div>
-<div class="absolute -top-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
-<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl"></div>
-</div>
-</section>
-<!-- Why AdsHive? (Bento Grid) -->
-<section class="py-24 bg-surface-container-low" id="benefits">
-<div class="max-w-7xl mx-auto px-8">
-<div class="mb-16">
-<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-4">O Padrão AdsHive</h2>
-<p class="text-on-surface-variant max-w-xl">Não criamos apenas sites. Criamos máquinas de vendas estruturadas sob os pilares da persuasão e do design premium.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Bento Box 1 -->
-<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-3xl border neon-border neon-glow flex flex-col justify-between transition-transform hover:-translate-y-1">
-<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
-</div>
-<div>
-<h3 class="text-2xl font-bold font-headline mb-4 text-primary">Velocidade que Converte</h3>
-<p class="text-on-surface-variant leading-relaxed">Páginas que carregam em menos de 2 segundos. Reduza sua taxa de rejeição e melhore o ROI das suas campanhas de tráfego pago instantaneamente.</p>
+<div class="flex items-center gap-4">
+<a class="inline-flex items-center justify-center h-10 sm:h-11 px-3 sm:px-5 rounded-lg bg-[#6E0ED7] hover:bg-[#9327E7] text-white font-headline-sm text-xs sm:text-sm font-semibold transition-all shadow-[0_0_20px_rgba(219,101,245,0.35)] hover:shadow-[0_0_25px_rgba(219,101,245,0.55)] text-center" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20cria%C3%A7%C3%A3o%20de%20landing%20page%20da%20AdsHive." target="_blank"><span class="hidden sm:inline">Quero Minha Landing Page</span><span class="sm:hidden">Quero Meu Site</span></a>
 </div>
 </div>
-<!-- Bento Box 2 -->
-<div class="bg-primary p-10 rounded-3xl flex flex-col justify-between text-white neon-glow transition-transform hover:-translate-y-1">
-<div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-3xl">smartphone</span>
+</header>
+<main class="w-full pt-20 bg-[#080311]">
+<div class="flex flex-col w-full relative">
+<!-- AMBIENT BACKGROUND GLOWS -->
+<div class="absolute top-10 right-0 w-[550px] h-[550px] bg-gradient-to-bl from-[#6E0ED7]/25 via-[#DB65F5]/10 to-transparent blur-[120px] pointer-events-none rounded-full -z-10"></div>
+<div class="absolute top-[850px] -left-40 w-[600px] h-[600px] bg-gradient-to-tr from-[#581198]/20 via-[#DB65F5]/10 to-transparent blur-[140px] pointer-events-none rounded-full -z-10"></div>
+<div class="absolute top-[2400px] right-0 w-[550px] h-[550px] bg-gradient-to-b from-[#6E0ED7]/20 via-[#DB65F5]/10 to-transparent blur-[130px] pointer-events-none rounded-full -z-10"></div>
+<!-- 1. HERO SECTION -->
+<section class="relative px-4 sm:px-6 lg:px-12 py-8 sm:py-12 lg:py-24 max-w-7xl mx-auto w-full overflow-hidden"><div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center"><div class="lg:col-span-7 flex flex-col gap-6"><div class="inline-flex items-center gap-2 self-start px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-full bg-[#120820] border border-[#581198]"><span class="inline-block w-2 h-2 rounded-full bg-[#DB65F5] animate-pulse"></span><span class="font-label-md text-xs sm:text-sm text-[#DB65F5] uppercase tracking-wider font-bold">⚡ MAIS DE 80% DOS SEUS VISITANTES ESTÃO COMPRANDO DO SEU CONCORRENTE</span></div><h1 class="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1] text-balance">Sua Empresa Ainda Não Tem um Site? <br class="hidden sm:inline"><span class="text-transparent bg-clip-text bg-gradient-to-r from-[#DB65F5] via-[#a855f7] to-white">Você Está Deixando Dinheiro na Mesa</span> Todos os Dias!</h1><p class="font-body-lg text-sm sm:text-base lg:text-lg text-[#B9AFC4] max-w-2xl leading-relaxed">Transforme visitantes curiosos do WhatsApp e Instagram em clientes pagantes com uma <strong class="text-white font-semibold">Landing Page de Alta Conversão</strong>: design premium editorial, carregamento instantâneo e copy hipnótica <span class="text-[#DB65F5] font-bold">a partir de R$ 497,00</span>.</p><div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2 w-full"><a class="inline-flex items-center justify-center gap-2 h-13 sm:h-14 px-6 sm:px-8 rounded-lg bg-[#6E0ED7] text-white font-headline-sm text-sm font-bold uppercase tracking-wide hover:bg-[#9327E7] transition-all shadow-[0_0_25px_rgba(219,101,245,0.4)] hover:shadow-[0_0_35px_rgba(219,101,245,0.6)] text-center" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Quero%20minha%20Landing%20Page%20de%20Alta%20Convers%C3%A3o%20da%20AdsHive." target="_blank"><span>Quero Minha Landing Page Agora</span><span class="material-symbols-outlined text-xl">arrow_forward</span></a><a class="inline-flex items-center justify-center gap-2 h-12 sm:h-14 px-6 sm:px-7 rounded-lg bg-[#120820] border border-[#581198] text-[#DB65F5] font-headline-sm text-sm font-semibold hover:bg-[#1a0c2e] hover:border-[#DB65F5]/60 transition-all text-white text-center" href="#portfolio"><span class="material-symbols-outlined text-lg">visibility</span><span>Ver Exemplos Reais</span></a></div><div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-2 sm:pt-4"><div class="flex items-center gap-2 p-2 sm:p-2.5 rounded-lg bg-[#120820] border border-[#581198]/40 shadow-sm"><span class="material-symbols-outlined text-[#DB65F5] text-base sm:text-lg">bolt</span><span class="font-label-sm text-xs text-white">Carregamento &lt; 2s</span></div><div class="flex items-center gap-2 p-2 sm:p-2.5 rounded-lg bg-[#120820] border border-[#581198]/40 shadow-sm"><span class="material-symbols-outlined text-[#DB65F5] text-base sm:text-lg">smartphone</span><span class="font-label-sm text-xs text-white">100% Celular</span></div><div class="flex items-center gap-2 p-2 sm:p-2.5 rounded-lg bg-[#120820] border border-[#581198]/40 shadow-sm"><span class="material-symbols-outlined text-[#DB65F5] text-base sm:text-lg">lock</span><span class="font-label-sm text-xs text-white">Pix &amp; Cartão</span></div><div class="flex items-center gap-2 p-2 sm:p-2.5 rounded-lg bg-[#120820] border border-[#581198]/40 shadow-sm"><span class="material-symbols-outlined text-[#DB65F5] text-base sm:text-lg">chat</span><span class="font-label-sm text-xs text-white">Suporte WhatsApp</span></div></div></div><div class="lg:col-span-5 relative w-full"><div class="relative mx-auto w-full max-w-md lg:max-w-lg"><div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-[#6E0ED7]/40 via-[#DB65F5]/30 to-[#581198]/40 blur-xl opacity-80"></div><div class="relative rounded-2xl bg-[#120820] border border-[#581198] p-4 sm:p-6 shadow-2xl flex flex-col gap-4 sm:gap-5 overflow-hidden"><div class="flex items-center justify-between pb-3 border-b border-[#581198]/40"><div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span><span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span><span class="w-3 h-3 rounded-full bg-[#DB65F5]/80 inline-block"></span></div><div class="px-2.5 sm:px-3 py-1 rounded bg-[#080311] border border-[#581198]/50 text-[#B9AFC4] font-label-sm text-xs flex items-center gap-1.5 truncate max-w-[200px] sm:max-w-none"><span class="material-symbols-outlined text-xs text-[#DB65F5]">lock</span><span class="truncate">adshive.com.br/sua-empresa</span></div><span class="material-symbols-outlined text-[#B9AFC4] text-sm">more_vert</span></div><div class="p-3.5 sm:p-4 rounded-xl bg-[#080311] border border-[#581198]/40 relative overflow-hidden flex flex-col gap-3"><div class="flex items-center justify-between"><span class="px-2.5 py-0.5 rounded bg-[#6E0ED7]/30 border border-[#581198] text-[#DB65F5] font-label-sm text-xs uppercase tracking-wider font-bold">Landing Page Ativa</span><span class="flex items-center gap-1.5 font-body-sm text-xs text-[#DB65F5] font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-[#DB65F5] animate-ping inline-block"></span>98.4% Conversão</span></div><div class="grid grid-cols-2 gap-2 sm:gap-3 pt-1"><div class="p-2.5 sm:p-3 rounded-lg bg-[#120820] border border-[#581198]/40"><span class="font-body-sm text-xs text-[#B9AFC4] block">Visitantes Hoje</span><span class="font-headline-md text-xl sm:text-2xl font-bold text-white">3.842</span><span class="font-label-sm text-xs text-[#DB65F5] flex items-center gap-0.5 mt-1 font-semibold"><span class="material-symbols-outlined text-xs">trending_up</span> +312%</span></div><div class="p-2.5 sm:p-3 rounded-lg bg-[#120820] border border-[#581198]/40"><span class="font-body-sm text-xs text-[#B9AFC4] block">Leads WhatsApp</span><span class="font-headline-md text-xl sm:text-2xl font-bold text-[#DB65F5]">428</span><span class="font-label-sm text-xs text-white flex items-center gap-0.5 mt-1 font-semibold"><span class="material-symbols-outlined text-xs text-[#DB65F5]">bolt</span> ROI Imediato</span></div></div><div class="mt-2 pt-2 flex flex-col gap-1.5 border-t border-[#581198]/30"><div class="flex justify-between items-center text-[#B9AFC4] font-label-sm text-xs"><span>Tráfego &amp; Retenção Mobile</span><span class="text-[#DB65F5] font-semibold">99.8% Uptime</span></div><svg class="w-full h-14 sm:h-16 text-[#DB65F5]" fill="none" preserveAspectRatio="none" viewBox="0 0 300 60"><path d="M0 45 C40 40, 70 20, 110 32 C150 44, 190 8, 230 14 C270 20, 285 5, 300 2" stroke="currentColor" stroke-linecap="round" stroke-width="2.5" vector-effect="non-scaling-stroke"></path><path d="M0 45 C40 40, 70 20, 110 32 C150 44, 190 8, 230 14 C270 20, 285 5, 300 2 L300 60 L0 60 Z" fill="currentColor" fill-opacity="0.15"></path></svg></div></div><div class="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-[#120820] border border-[#581198] shadow-lg"><div class="flex items-center gap-2.5 sm:gap-3"><div class="w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center text-[#DB65F5]"><span class="material-symbols-outlined text-lg sm:text-xl">payments</span></div><div><span class="font-label-md text-xs sm:text-sm text-white block font-bold">Novo Cliente Agendado!</span><span class="font-body-sm text-xs text-[#B9AFC4]">Via Botão WhatsApp</span></div></div><span class="font-label-sm text-xs text-[#DB65F5] font-bold">Agora mesmo</span></div></div></div></div></div></section>
+<!-- 2. CONFRONTAÇÃO E DOR -->
+<section class="px-4 sm:px-6 lg:px-12 py-12 md:py-20 lg:py-24 bg-[#080311] border-y border-[#581198]/30 relative overflow-hidden"><div class="max-w-7xl mx-auto flex flex-col gap-8 md:gap-12"><div class="text-center max-w-3xl mx-auto flex flex-col gap-3"><span class="font-label-md text-xs sm:text-sm text-[#DB65F5] uppercase tracking-widest font-extrabold">Diagnóstico Cruel</span><h2 class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-bold text-white">A Realidade do Seu Negócio Hoje: Por Que Você Perde Vendas?</h2><p class="font-body-lg text-sm sm:text-base lg:text-lg text-[#B9AFC4]">Confira o abismo que separa quem depende exclusivamente do Direct do Instagram de quem possui uma infraestrutura de autoridade 24 horas por dia.</p></div><div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 items-stretch"><div class="rounded-2xl bg-[#120820]/70 border border-[#581198]/40 p-5 sm:p-8 flex flex-col justify-between gap-6 shadow-md relative overflow-hidden"><div class="flex items-center justify-between pb-4 border-b border-[#581198]/30"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-red-950/60 border border-red-500/30 flex items-center justify-center text-red-400"><span class="material-symbols-outlined">cancel</span></div><h3 class="font-headline-md text-xl sm:text-2xl font-bold text-white">Sem Landing Page</h3></div><span class="px-3 py-1 rounded bg-red-950/60 border border-red-500/30 text-red-400 font-label-sm text-xs uppercase font-bold">Amadorismo</span></div><div class="flex flex-col gap-3.5 sm:gap-4"><div class="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#080311]/80 border border-[#581198]/20"><span class="material-symbols-outlined text-red-400 text-xl shrink-0 mt-0.5">do_not_disturb_on</span><div><strong class="font-headline-sm text-sm sm:text-base text-white block font-semibold">Cliente pede o preço e desaparece</strong><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Sem uma proposta de valor visual clara, seu serviço vira apenas uma commodity comparada pelo menor preço.</p></div></div><div class="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#080311]/80 border border-[#581198]/20"><span class="material-symbols-outlined text-red-400 text-xl shrink-0 mt-0.5">timer_off</span><div><strong class="font-headline-sm text-sm sm:text-base text-white block font-semibold">Gasta horas respondendo o básico</strong><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Você repete as mesmas respostas no WhatsApp o dia inteiro, desgastando seu tempo operacional com curiosos.</p></div></div><div class="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#080311]/80 border border-[#581198]/20"><span class="material-symbols-outlined text-red-400 text-xl shrink-0 mt-0.5">nightlight</span><div><strong class="font-headline-sm text-sm sm:text-base text-white block font-semibold">Perde vendas na madrugada e fins de semana</strong><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Se você não estiver com o celular na mão respondendo em 3 minutos, o lead compra direto no concorrente.</p></div></div><div class="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#080311]/80 border border-[#581198]/20"><span class="material-symbols-outlined text-red-400 text-xl shrink-0 mt-0.5">money_off</span><div><strong class="font-headline-sm text-sm sm:text-base text-white block font-semibold">Dinheiro de anúncios jogado no lixo</strong><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Mandar tráfego pago direto para o perfil do Instagram dispersa a atenção com reels e notificações alheias.</p></div></div></div><div class="p-3 bg-red-950/40 border border-red-500/20 rounded-lg text-red-300 font-body-sm text-xs text-center">Resultado: Leads desqualificados, cansaço extremo e faturamento estagnado.</div></div><div class="rounded-2xl bg-[#120820] border-2 border-[#581198] p-5 sm:p-8 flex flex-col justify-between gap-6 shadow-[0_0_30px_rgba(110,14,215,0.2)] relative overflow-hidden"><div class="flex items-center justify-between pb-4 border-b border-[#581198]/40"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-[#6E0ED7]/30 border border-[#DB65F5]/40 flex items-center justify-center text-[#DB65F5]"><span class="material-symbols-outlined">verified</span></div><h3 class="font-headline-md text-xl sm:text-2xl font-bold text-white">Com a Máquina AdsHive</h3></div><span class="px-3 py-1 rounded bg-[#6E0ED7] text-white font-label-sm text-xs uppercase font-extrabold shadow-[0_0_15px_rgba(219,101,245,0.4)]">Alta Conversão</span></div><div class="flex flex-col gap-3.5 sm:gap-4"><div class="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#080311] border border-[#581198]/50"><span class="material-symbols-outlined text-[#DB65F5] text-xl shrink-0 mt-0.5">check_circle</span><div><strong class="font-headline-sm text-sm sm:text-base text-white block font-semibold">Autoridade Imediata e Percepção de Valor</strong><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Sua marca ganha porte de grande empresa, justificando cobrar mais caro sem sofrer com pedidos de desconto.</p></div></div><div class="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#080311] border border-[#581198]/50"><span class="material-symbols-outlined text-[#DB65F5] text-xl shrink-0 mt-0.5">check_circle</span><div><strong class="font-headline-sm text-sm sm:text-base text-white block font-semibold">O Cliente Já Chega Pronto para Pagar</strong><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">A copy tira todas as dúvidas e quebra objeções. Quando ele clica no botão, já conhece a solução e quer fechar.</p></div></div><div class="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#080311] border border-[#581198]/50"><span class="material-symbols-outlined text-[#DB65F5] text-xl shrink-0 mt-0.5">check_circle</span><div><strong class="font-headline-sm text-sm sm:text-base text-white block font-semibold">Máquina de Vendas no Ar 24 Horas</strong><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Seus serviços explicados e apresentados 7 dias por semana, inclusive nos feriados e madrugadas, sem parar.</p></div></div><div class="flex items-start gap-3 p-3 sm:p-3.5 rounded-xl bg-[#080311] border border-[#581198]/50"><span class="material-symbols-outlined text-[#DB65F5] text-xl shrink-0 mt-0.5">check_circle</span><div><strong class="font-headline-sm text-sm sm:text-base text-white block font-semibold">Mensuração com Pixel &amp; Google Tags</strong><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Saiba de onde veio cada clique e alimente o algoritmo dos seus anúncios com inteligência real de conversão.</p></div></div></div><a class="flex items-center justify-center gap-2 min-h-[44px] py-3.5 px-4 rounded-lg bg-[#6E0ED7] hover:bg-[#9327E7] text-white font-headline-sm text-sm font-bold transition-all shadow-[0_0_20px_rgba(219,101,245,0.4)] text-center w-full" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Quero%20vender%20no%20piloto%20autom%C3%A1tico%20com%20a%20m%C3%A1quina%20AdsHive." target="_blank"><span>Quero Vender no Piloto Automático</span><span class="material-symbols-outlined text-lg">arrow_forward</span></a></div></div></div></section>
+<!-- 3. GRANDES VANTAGENS -->
+<section class="px-4 sm:px-6 lg:px-12 py-12 md:py-20 lg:py-24 max-w-7xl mx-auto w-full" id="vantagens"><div class="flex flex-col gap-10 md:gap-14"><div class="text-center max-w-3xl mx-auto flex flex-col gap-3"><span class="font-label-md text-xs sm:text-sm text-[#DB65F5] uppercase tracking-widest font-extrabold">Por que AdsHive?</span><h2 class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-bold text-white">Por que uma Landing Page AdsHive Faz Sua Empresa Vender Mais?</h2><p class="font-body-lg text-sm sm:text-base lg:text-lg text-[#B9AFC4]">Unimos neuromarketing militar, design contemporâneo de elite e arquitetura técnica ultraleve para esmagar sua concorrência.</p></div><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6"><div class="rounded-2xl bg-[#120820] border border-[#581198] p-5 sm:p-6 flex flex-col gap-4 shadow-lg hover:border-[#DB65F5]/60 hover:-translate-y-1 transition-all"><div class="w-12 h-12 rounded-xl bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center text-[#DB65F5]"><span class="material-symbols-outlined text-2xl">speed</span></div><h3 class="font-headline-sm text-lg sm:text-xl font-bold text-white">🚀 Velocidade Brutal</h3><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Páginas leves que abrem em menos de 2 segundos. Sem perda de tráfego esperando carregamento lento. Retenha até 70% mais visitantes que desistem de páginas pesadas do WordPress.</p><div class="mt-auto pt-3 flex items-center gap-2 font-label-sm text-xs text-[#DB65F5] font-semibold"><span class="material-symbols-outlined text-base">check</span> Google PageSpeed 95+</div></div><div class="rounded-2xl bg-[#120820] border border-[#581198] p-5 sm:p-6 flex flex-col gap-4 shadow-lg hover:border-[#DB65F5]/60 hover:-translate-y-1 transition-all"><div class="w-12 h-12 rounded-xl bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center text-[#DB65F5]"><span class="material-symbols-outlined text-2xl">smartphone</span></div><h3 class="font-headline-sm text-lg sm:text-xl font-bold text-white">📱 Foco 100% Mobile First</h3><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Mais de 85% do público clica pelo smartphone no Instagram ou nos anúncios. Nossas estruturas são desenhadas para a tela vertical, polegar ágil e leitura ultra escaneável.</p><div class="mt-auto pt-3 flex items-center gap-2 font-label-sm text-xs text-[#DB65F5] font-semibold"><span class="material-symbols-outlined text-base">check</span> Ergonomia de Toque Perfeita</div></div><div class="rounded-2xl bg-[#120820] border border-[#581198] p-5 sm:p-6 flex flex-col gap-4 shadow-lg hover:border-[#DB65F5]/60 hover:-translate-y-1 transition-all"><div class="w-12 h-12 rounded-xl bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center text-[#DB65F5]"><span class="material-symbols-outlined text-2xl">psychology</span></div><h3 class="font-headline-sm text-lg sm:text-xl font-bold text-white">🧠 Neuromarketing &amp; Copy</h3><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Não jogamos apenas textos bonitos. Aplicamos gatilhos mentais de ancoragem de valor, urgência genuína e prova social para guiar o inconsciente do lead direto ao checkout ou WhatsApp.</p><div class="mt-auto pt-3 flex items-center gap-2 font-label-sm text-xs text-[#DB65F5] font-semibold"><span class="material-symbols-outlined text-base">check</span> Redação Hipnótica</div></div><div class="rounded-2xl bg-[#120820] border border-[#581198] p-5 sm:p-6 flex flex-col gap-4 shadow-lg hover:border-[#DB65F5]/60 hover:-translate-y-1 transition-all"><div class="w-12 h-12 rounded-xl bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center text-[#DB65F5]"><span class="material-symbols-outlined text-2xl">monitoring</span></div><h3 class="font-headline-sm text-lg sm:text-xl font-bold text-white">🎯 Pronta para Anúncios</h3><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Entregamos com Meta Pixel, API de Conversões e Google Analytics 4 implementados. Otimize seus custos de tráfego rastreando cada lead gerado com precisão cirúrgica.</p><div class="mt-auto pt-3 flex items-center gap-2 font-label-sm text-xs text-[#DB65F5] font-semibold"><span class="material-symbols-outlined text-base">check</span> Pixel &amp; GA4 Integrados</div></div><div class="rounded-2xl bg-[#120820] border border-[#581198] p-5 sm:p-6 flex flex-col gap-4 shadow-lg hover:border-[#DB65F5]/60 hover:-translate-y-1 transition-all"><div class="w-12 h-12 rounded-xl bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center text-[#DB65F5]"><span class="material-symbols-outlined text-2xl">schedule_send</span></div><h3 class="font-headline-sm text-lg sm:text-xl font-bold text-white">⏱️ Entrega de 3 a 7 Dias</h3><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Você não precisa perder semanas com reuniões intermináveis ou entender linhas de código. Nosso processo é enxuto, ágil e focado em colocar seu faturamento para rodar logo.</p><div class="mt-auto pt-3 flex items-center gap-2 font-label-sm text-xs text-[#DB65F5] font-semibold"><span class="material-symbols-outlined text-base">check</span> Fluxo Rápido e Descomplicado</div></div><div class="rounded-2xl bg-[#120820] border border-[#581198] p-5 sm:p-6 flex flex-col gap-4 shadow-lg hover:border-[#DB65F5]/60 hover:-translate-y-1 transition-all"><div class="w-12 h-12 rounded-xl bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center text-[#DB65F5]"><span class="material-symbols-outlined text-2xl">support_agent</span></div><h3 class="font-headline-sm text-lg sm:text-xl font-bold text-white">💬 Suporte Humano no Zap</h3><p class="font-body-md text-xs sm:text-sm text-[#B9AFC4]">Atendimento direto e sem burocracia por especialistas no WhatsApp. Tiramos todas as suas dúvidas sobre domínio, hospedagem e estrutura de vendas sem termos técnicos chatos.</p><div class="mt-auto pt-3 flex items-center gap-2 font-label-sm text-xs text-[#DB65F5] font-semibold"><span class="material-symbols-outlined text-base">check</span> Atendimento Individualizado</div></div></div></div></section>
+<!-- 4. PLANOS & PREÇOS (REFORMULAÇÃO: SEM PREÇOS INDIVIDUAIS, APENAS A PARTIR DE R$ 497,00) -->
+<section class="px-4 sm:px-6 lg:px-12 py-12 md:py-20 lg:py-24 bg-[#080311] border-y border-[#581198]/30 relative" id="planos"><div class="max-w-7xl mx-auto flex flex-col gap-10 md:gap-14"><div class="text-center max-w-3xl mx-auto flex flex-col gap-3"><span class="font-label-md text-xs sm:text-sm text-[#DB65F5] uppercase tracking-widest font-extrabold">Retorno Rápido &amp; Máxima Autoridade</span><h2 class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-bold text-white">Planos Estratégicos a partir de <span class="text-[#DB65F5]">R$ 497,00</span></h2><p class="font-body-lg text-sm sm:text-base lg:text-lg text-[#B9AFC4]">Sem mensalidades ocultas ou contratos amarrados. Pagamento único pelo projeto com entrega profissional. Escolha o escopo ideal para o seu negócio:</p></div><div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 items-stretch"><div class="rounded-2xl bg-[#120820] border border-[#581198] p-6 sm:p-8 flex flex-col justify-between gap-6 sm:gap-8 shadow-md"><div class="flex flex-col gap-4"><div class="flex justify-between items-center"><h3 class="font-headline-md text-xl sm:text-2xl font-bold text-white">Básico</h3><span class="px-3 py-1 rounded bg-[#080311] border border-[#581198]/60 text-[#DB65F5] font-label-sm text-xs font-semibold">Iniciante</span></div><p class="font-body-sm text-xs sm:text-sm text-[#B9AFC4]">Ideal para validar uma oferta rápida ou divulgar um serviço pontual sem complicação.</p><div class="pt-2"><span class="inline-block px-3 py-1.5 rounded-lg bg-[#581198]/30 border border-[#581198] text-[#DB65F5] font-headline-sm text-sm sm:text-base font-bold">Sob Medida para Iniciantes</span></div><div class="pt-4 flex flex-col gap-2.5 sm:gap-3 border-t border-[#581198]/30"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Landing simples e direta</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">1 seção altamente estratégica</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Botão de contato com WhatsApp</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">100% responsiva para celular</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Entrega rápida em até 3 dias</span></div></div></div><a class="min-h-[48px] px-6 rounded-lg bg-[#120820] border border-[#581198] text-white font-headline-sm text-sm font-bold flex items-center justify-center gap-2 hover:bg-[#6E0ED7] hover:border-[#6E0ED7] transition-all w-full text-center" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20o%20Plano%20B%C3%A1sico%20da%20AdsHive." rel="noopener noreferrer" target="_blank"><span>Consultar Plano no WhatsApp</span><span class="material-symbols-outlined text-lg">arrow_forward</span></a></div><div class="rounded-2xl bg-[#120820] border-2 border-[#DB65F5] p-6 sm:p-8 flex flex-col justify-between gap-6 sm:gap-8 shadow-[0_0_35px_rgba(219,101,245,0.25)] relative lg:-translate-y-4"><div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-[#6E0ED7] border border-[#DB65F5] text-white font-label-sm text-xs uppercase font-extrabold shadow-[0_0_15px_rgba(219,101,245,0.5)] tracking-wider whitespace-nowrap">⭐ Mais Escolhido Pelos Clientes</div><div class="flex flex-col gap-4"><div class="flex justify-between items-center pt-2"><h3 class="font-headline-md text-xl sm:text-2xl font-bold text-white">Profissional</h3><span class="px-2.5 py-0.5 rounded bg-[#DB65F5]/20 border border-[#DB65F5]/50 text-[#DB65F5] font-label-sm text-xs font-bold">Mais Vendido</span></div><p class="font-body-sm text-xs sm:text-sm text-[#B9AFC4]">A arma definitiva para negócios locais, médicos, advogados, estéticas e prestadores de serviços.</p><div class="pt-2"><span class="inline-block px-3.5 py-1.5 rounded-lg bg-[#6E0ED7]/40 border border-[#DB65F5] text-white font-headline-sm text-sm sm:text-base font-bold shadow-sm">Mais Escolhido / Solução Completa</span></div><div class="pt-4 flex flex-col gap-2.5 sm:gap-3 border-t border-[#581198]/40"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white font-semibold">Estrutura de vendas completa (Até 6 seções)</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Design editorial e visual de alto padrão</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Quebra de objeções e FAQ interativo</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Seção de depoimentos &amp; Prova social</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Instalação de Pixel Meta e Google Tags</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Melhor custo-benefício disparado</span></div></div></div><a class="min-h-[52px] sm:h-14 px-6 rounded-lg bg-[#6E0ED7] hover:bg-[#9327E7] text-white font-headline-sm text-sm font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all shadow-[0_0_25px_rgba(219,101,245,0.45)] hover:shadow-[0_0_35px_rgba(219,101,245,0.65)] w-full text-center" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Quero%20garantir%20o%20Plano%20Profissional%20da%20AdsHive." rel="noopener noreferrer" target="_blank"><span>Garantir Plano Profissional</span><span class="material-symbols-outlined text-lg">bolt</span></a></div><div class="rounded-2xl bg-[#120820] border border-[#581198] p-6 sm:p-8 flex flex-col justify-between gap-6 sm:gap-8 shadow-md"><div class="flex flex-col gap-4"><div class="flex justify-between items-center"><h3 class="font-headline-md text-xl sm:text-2xl font-bold text-white">Premium</h3><span class="px-3 py-1 rounded bg-[#080311] border border-[#581198]/60 text-[#DB65F5] font-label-sm text-xs font-semibold">Escala Máxima</span></div><p class="font-body-sm text-xs sm:text-sm text-[#B9AFC4]">Para quem roda tráfego pesado e necessita de copywriter dedicado e gatilhos ultra avançados.</p><div class="pt-2"><span class="inline-block px-3 py-1.5 rounded-lg bg-[#581198]/30 border border-[#581198] text-[#DB65F5] font-headline-sm text-sm sm:text-base font-bold">Escala Máxima &amp; Performance</span></div><div class="pt-4 flex flex-col gap-2.5 sm:gap-3 border-t border-[#581198]/30"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Copywriter persuasivo dedicado</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Gatilhos mentais e storytelling profundo</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Integrações de API de Conversão avançada</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Foco total em escala agressiva de tráfego</span></div><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[#DB65F5] text-lg">check_circle</span><span class="font-body-md text-xs sm:text-sm text-white">Prioridade máxima na fila de produção</span></div></div></div><a class="min-h-[48px] px-6 rounded-lg bg-[#120820] border border-[#581198] text-white font-headline-sm text-sm font-bold flex items-center justify-center gap-2 hover:bg-[#6E0ED7] hover:border-[#6E0ED7] transition-all w-full text-center" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Quero%20falar%20com%20um%20especialista%20sobre%20o%20Plano%20Premium%20da%20AdsHive." rel="noopener noreferrer" target="_blank"><span>Falar com Especialista</span><span class="material-symbols-outlined text-lg">arrow_forward</span></a></div></div></div></section>
+<!-- 5. PORTFÓLIO & CASOS REAIS -->
+<section class="px-4 sm:px-6 lg:px-12 py-12 md:py-20 lg:py-24 bg-[#080311] border-y border-[#581198]/30 relative"><div class="max-w-7xl mx-auto flex flex-col gap-10 md:gap-14"><div class="flex flex-col md:flex-row md:items-end justify-between gap-6"><div class="flex flex-col gap-3"><span class="font-label-md text-xs sm:text-sm text-[#DB65F5] uppercase tracking-widest font-extrabold">Resultados Reais</span><h2 class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-bold text-white">Quem Já Decolou Com a AdsHive</h2><p class="font-body-lg text-sm sm:text-base lg:text-lg text-[#B9AFC4]">O sucesso dos nossos parceiros é a melhor prova de que nosso método converte.</p></div><div class="p-4 rounded-xl bg-[#120820] border border-[#581198] flex items-center gap-4 shadow-sm self-start md:self-auto"><div class="flex flex-col"><span class="font-headline-lg text-2xl sm:text-3xl font-extrabold text-white leading-none">4.9<span class="text-[#DB65F5]">/5.0</span></span><span class="font-body-sm text-xs text-[#B9AFC4]">Média de Satisfação</span></div><div class="flex flex-col gap-1"><div class="flex text-[#DB65F5]"><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span></div><span class="font-label-sm text-xs text-[#DB65F5] font-bold">+120 Clientes Atendidos</span></div></div></div><div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"><div class="p-6 sm:p-8 rounded-2xl bg-[#120820] border border-[#581198] flex flex-col justify-between gap-6 shadow-md"><div class="flex flex-col gap-4"><div class="flex text-[#DB65F5]"><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span></div><p class="font-body-md text-sm sm:text-base text-white italic leading-relaxed">"Minha taxa de conversão aumentou 3x logo depois da nova página no ar. O investimento se pagou em menos de 48 horas com os anúncios rodando no Instagram!"</p></div><div class="flex items-center gap-3 pt-4 border-t border-[#581198]/30"><div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center font-bold text-[#DB65F5]">RM</div><div><strong class="font-headline-sm text-sm font-semibold text-white block">Ricardo Mendes</strong><span class="font-body-sm text-xs text-[#B9AFC4]">CEO, Mendes Cosméticos</span></div></div></div><div class="p-6 sm:p-8 rounded-2xl bg-[#120820] border border-[#581198] flex flex-col justify-between gap-6 shadow-md"><div class="flex flex-col gap-4"><div class="flex text-[#DB65F5]"><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span></div><p class="font-body-md text-sm sm:text-base text-white italic leading-relaxed">"Fiquei impressionada com o acabamento visual. Parece que contratei uma agência enorme de São Paulo que cobraria 5 mil reais. O suporte pelo WhatsApp foi nota 10!"</p></div><div class="flex items-center gap-3 pt-4 border-t border-[#581198]/30"><div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center font-bold text-[#DB65F5]">MS</div><div><strong class="font-headline-sm text-sm font-semibold text-white block">Mariana Silva</strong><span class="font-body-sm text-xs text-[#B9AFC4]">Especialista em Cílios &amp; Estética</span></div></div></div><div class="p-6 sm:p-8 rounded-2xl bg-[#120820] border border-[#581198] flex flex-col justify-between gap-6 shadow-md"><div class="flex flex-col gap-4"><div class="flex text-[#DB65F5]"><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span><span class="material-symbols-outlined text-base sm:text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span></div><p class="font-body-md text-sm sm:text-base text-white italic leading-relaxed">"A AdsHive entendeu exatamente a psicologia do meu cliente. O processo foi rápido, sem enrolação e o resultado final transmitiu uma autoridade absurda para o meu produto."</p></div><div class="flex items-center gap-3 pt-4 border-t border-[#581198]/30"><div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center font-bold text-[#DB65F5]">LF</div><div><strong class="font-headline-sm text-sm font-semibold text-white block">Lucas Ferraz</strong><span class="font-body-sm text-xs text-[#B9AFC4]">Infoprodutor Digital &amp; Mentor</span></div></div></div></div></div></section>
+<!-- 6. PROVA SOCIAL & DEPOIMENTOS -->
+<section class="px-6 lg:px-12 py-16 lg:py-24 bg-[#080311] border-y border-[#581198]/30 relative">
+<div class="max-w-7xl mx-auto flex flex-col gap-14">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-xs sm:text-sm text-[#DB65F5] uppercase tracking-widest font-extrabold">Resultados Reais</span>
+<h2 class="font-headline-lg text-3xl sm:text-4xl font-bold text-white">
+                Quem Já Decolou Com a AdsHive
+              </h2>
+<p class="font-body-lg text-base sm:text-lg text-[#B9AFC4]">
+                O sucesso dos nossos parceiros é a melhor prova de que nosso método converte.
+              </p>
 </div>
-<div>
-<h3 class="text-2xl font-bold font-headline mb-4">Mobile First</h3>
-<p class="opacity-80 text-sm">Foco total no comportamento do usuário mobile. Experiência de scroll infinita otimizada para dedos, não para mouses.</p>
+<!-- Rating Counter Card -->
+<div class="p-4 rounded-xl bg-[#120820] border border-[#581198] flex items-center gap-4 shadow-sm self-start md:self-auto">
+<div class="flex flex-col">
+<span class="font-headline-lg text-3xl font-extrabold text-white leading-none">4.9<span class="text-[#DB65F5]">/5.0</span></span>
+<span class="font-body-sm text-xs text-[#B9AFC4]">Média de Satisfação</span>
 </div>
+<div class="flex flex-col gap-1">
+<div class="flex text-[#DB65F5]">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
 </div>
-<!-- Bento Box 3 -->
-<div class="bg-surface-container-lowest p-10 rounded-3xl border neon-border neon-glow transition-transform hover:-translate-y-1">
-<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-8">
-<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
-</div>
-<h3 class="text-2xl font-bold font-headline mb-4 text-primary">Neuromarketing</h3>
-<p class="text-on-surface-variant">Copywriting e elementos visuais estrategicamente posicionados para guiar o olhar do cliente para a ação.</p>
-</div>
-<!-- Bento Box 4 -->
-<div class="md:col-span-2 bg-inverse-surface p-10 rounded-3xl text-inverse-on-surface flex flex-col md:flex-row gap-8 items-center neon-glow transition-transform hover:-translate-y-1">
-<div class="flex-1">
-<h3 class="text-2xl font-bold font-headline mb-4">Entrega em 72 Horas</h3>
-<p class="opacity-70">Processo enxuto e consultivo. Do briefing ao ar com agilidade máxima, sem comprometer a qualidade editorial.</p>
-</div>
-<div class="flex gap-2">
-<div class="w-12 h-12 bg-black/10 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined">timer</span>
-</div>
-<div class="w-12 h-12 bg-black/10 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined">speed</span>
+<span class="font-label-sm text-xs text-[#DB65F5] font-bold">+120 Clientes Atendidos</span>
 </div>
 </div>
 </div>
-</div>
-</div>
-</section>
-<!-- Guarantee Section -->
-<section class="py-24 bg-surface" id="guarantee">
-<div class="max-w-7xl mx-auto px-8">
-<div class="bg-surface-container-high border-2 neon-border neon-glow-strong rounded-[3rem] p-12 lg:p-20 flex flex-col lg:flex-row items-center gap-12">
-<div class="flex-1 text-center lg:text-left">
-<div class="inline-flex items-center gap-2 px-4 py-1 bg-primary/20 text-primary rounded-full text-xs font-black uppercase tracking-widest mb-6">
-                        Compromisso com Resultado
-                    </div>
-<h2 class="text-3xl lg:text-5xl font-extrabold font-headline text-on-surface mb-6">Garantia de Retrabalho</h2>
-<p class="text-lg text-on-surface-variant leading-relaxed">
-                        Se sua página não mostrar melhora de CTR ou conversão nos primeiros 7 dias, refazemos a estrutura de gatilhos e copy sem custo adicional. Não queremos apenas entregar um site, queremos entregar vendas.
-                    </p>
-</div>
-<div class="w-full lg:w-1/3 flex justify-center">
-<div class="relative">
-<span class="material-symbols-outlined text-[120px] text-primary" style="font-variation-settings: 'wght' 200;">verified_user</span>
-<div class="absolute inset-0 bg-primary/30 blur-3xl -z-10 rounded-full"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Our Segmented Portfolio -->
-<section class="py-24 bg-surface" id="portfolio">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-6">Portfólio Estratégico</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Experiência comprovada em diversos nichos de alta performance.</p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<!-- Project 1: Saúde -->
-<div class="group">
-<div class="bg-surface-container-lowest rounded-2xl overflow-hidden neon-glow neon-border border group-hover:-translate-y-2 transition-all duration-500">
-<div class="bg-surface-container p-3 flex items-center gap-2">
-<div class="flex gap-1.5">
-<div class="w-3 h-3 rounded-full bg-error/40"></div>
-<div class="w-3 h-3 rounded-full bg-secondary-container/40"></div>
-<div class="w-3 h-3 rounded-full bg-primary/40"></div>
-</div>
-<div class="flex-1 mx-4 bg-surface-container-lowest rounded py-1 px-3 text-[10px] text-on-surface-variant truncate">Saúde &amp; Infoproduto</div>
-</div>
-<div class="aspect-square overflow-hidden bg-white">
-<img alt="Triagem TEA Case" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT3-DXmKxkFEZtGGEZL95L7PepPFjAKAhMpBWov79dAQjTuUApGuyvqBS4Ku3m5pQOPYrcmZf6u7p9PfknOSXRkkJSe6MzVplcl252038YHXNw9EJyT-uZOC4nr6vmHRBV6QeXQ4EwSOOPZlbg24kv3brfTeRbMuyU_NRhAv8xlq4kSZWXQ_9OBAqGBadjpdqz-PLicxsPYsubTzCU8bTb60ljFWur1vufAgZFJPZ7fCPUrP9U6G7tx9mZqLTSqgODRV-7DMrEpUk"/>
-</div>
-</div>
-<h4 class="mt-6 font-bold text-lg font-headline text-on-surface group-hover:text-primary transition-colors">Triagem TEA</h4>
-<p class="text-primary text-sm font-bold uppercase tracking-widest mt-1">Alta autoridade técnica</p>
-</div>
-<!-- Project 2: Alimentação -->
-<div class="group">
-<div class="bg-surface-container-lowest rounded-2xl overflow-hidden neon-glow neon-border border group-hover:-translate-y-2 transition-all duration-500">
-<div class="bg-surface-container p-3 flex items-center gap-2">
-<div class="flex gap-1.5">
-<div class="w-3 h-3 rounded-full bg-error/40"></div>
-<div class="w-3 h-3 rounded-full bg-secondary-container/40"></div>
-<div class="w-3 h-3 rounded-full bg-primary/40"></div>
-</div>
-<div class="flex-1 mx-4 bg-surface-container-lowest rounded py-1 px-3 text-[10px] text-on-surface-variant truncate">Alimentação &amp; Delivery</div>
-</div>
-<div class="aspect-square overflow-hidden bg-white">
-<img alt="Geladinho Gourmet Case" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjTDvCsBiwKDtV-IxK9vByL5tbKz1FzM2wGt0TSJWNUGCUPhOO6u0UteVVDkuR8f7yPYI7BssCkCwPrnjEQx1Qze4P_4pnGZu6t_g0TKa5gnDBhJhvSXK90BzMnRiJTUTTd9nU36vAGQ24zEaWSXq3DdKpC1QSQ9StZnKMgHEaauTr2g7TdowmYvsqD-pmozk8zf68wVPO5ywfQim4XGwE1uhGN6TBAQ76CR_Hrv3N3zCdyoIYMnrD0QDFCJJcsvYcLDjeEcPV3xU"/>
-</div>
-</div>
-<h4 class="mt-6 font-bold text-lg font-headline text-on-surface group-hover:text-primary transition-colors">Geladinho Gourmet</h4>
-<p class="text-primary text-sm font-bold uppercase tracking-widest mt-1">Visual apetecível</p>
-</div>
-<!-- Project 3: Beleza -->
-<div class="group">
-<div class="bg-surface-container-lowest rounded-2xl overflow-hidden neon-glow neon-border border group-hover:-translate-y-2 transition-all duration-500">
-<div class="bg-surface-container p-3 flex items-center gap-2">
-<div class="flex gap-1.5">
-<div class="w-3 h-3 rounded-full bg-error/40"></div>
-<div class="w-3 h-3 rounded-full bg-secondary-container/40"></div>
-<div class="w-3 h-3 rounded-full bg-primary/40"></div>
-</div>
-<div class="flex-1 mx-4 bg-surface-container-lowest rounded py-1 px-3 text-[10px] text-on-surface-variant truncate">Beleza &amp; Estética</div>
-</div>
-<div class="aspect-square overflow-hidden bg-white">
-<img alt="Cílios Poderosos Case" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCPuigD2q9aNEGczBth-yFOj-Usw5ZRQvV-SuNst8ZF-5Uy28Jdf3gH_rTlCyh_HBXaHtGeXfzxSUbJ3DYvjSgcbFkt_6zSNzwko9TCMtlMUk8CPKYQYbXsuciih1HqT951iNd_5u3SlBLoExoxCg7TqDrYxTzk9wV1ai4sP8NnH_cd_ffu9_PlwnLoJvuVqk9bCQcoO3zSG6nfiOb11rAlILwmJMXp87Yjtk1Sgj-qaD0WK1ExUdKjOsB0R4TxDqX3NnRjr5Wk2c"/>
-</div>
-</div>
-<h4 class="mt-6 font-bold text-lg font-headline text-on-surface group-hover:text-primary transition-colors">Cílios Poderosos</h4>
-<p class="text-primary text-sm font-bold uppercase tracking-widest mt-1">Foco em estética premium</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Pricing Table -->
-<section class="py-24 bg-surface-container-low" id="plans">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-6">Investimento em Performance</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Valores promocionais para escalar seu negócio hoje.</p>
-</div>
+<!-- Testimonial Cards -->
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Plan 1: Básico -->
-<div class="bg-surface-container-lowest p-8 rounded-[2rem] border neon-border neon-glow flex flex-col transition-transform hover:-translate-y-1">
-<h3 class="text-xl font-bold font-headline mb-2 text-on-surface">Essencial</h3>
-<div class="flex items-baseline gap-1 mb-6">
-<span class="text-sm font-bold text-on-surface-variant">R$</span>
-<span class="text-4xl font-black text-on-surface">97</span>
+<!-- Depoimento 1 -->
+<div class="p-8 rounded-2xl bg-[#120820] border border-[#581198] flex flex-col justify-between gap-6 shadow-md">
+<div class="flex flex-col gap-4">
+<div class="flex text-[#DB65F5]">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
 </div>
-<ul class="space-y-4 mb-10 flex-1">
-<li class="flex items-center gap-3 text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                            Landing Page Direct-Response
-                        </li>
-<li class="flex items-center gap-3 text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                            Seção única estratégica
-                        </li>
-</ul>
-<a class="w-full py-4 text-center bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-surface-variant transition-colors border border-primary/10" href="https://wa.me/5531996861334?text=Olá! Quero o Plano Essencial de R$ 97.">
-                        Começar Agora
-                    </a>
+<p class="font-body-md text-sm sm:text-base text-white italic leading-relaxed">
+                  "Minha taxa de conversão aumentou 3x logo depois da nova página no ar. O investimento se pagou em menos de 48 horas com os anúncios rodando no Instagram!"
+                </p>
 </div>
-<!-- Plan 2: Profissional (Reancoragem) -->
-<div class="bg-primary p-8 rounded-[2rem] border-2 border-primary/50 neon-glow-strong flex flex-col relative transform lg:-translate-y-4 text-white">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-white text-primary text-[10px] font-black uppercase tracking-widest rounded-full shadow-md">
-                        OFERTA EXCLUSIVA DIAGNÓSTICO
-                    </div>
-<h3 class="text-xl font-bold font-headline mb-2">Profissional</h3>
-<div class="flex flex-col mb-6">
-<span class="text-xs font-bold line-through opacity-60">De R$ 397</span>
-<div class="flex items-baseline gap-1">
-<span class="text-sm font-bold">Por R$</span>
-<span class="text-4xl font-black">197</span>
-</div>
-</div>
-<ul class="space-y-4 mb-10 flex-1">
-<li class="flex items-center gap-3 text-sm">
-<span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Estrutura de vendas multi-seção
-                        </li>
-<li class="flex items-center gap-3 text-sm">
-<span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Copywriting persuasivo incluso
-                        </li>
-<li class="flex items-center gap-3 text-sm font-bold">
-<span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-                            Entrega Prioritária (72h)
-                        </li>
-</ul>
-<a class="w-full py-4 text-center bg-white text-primary font-bold rounded-xl shadow-lg hover:bg-surface-bright hover:text-white transition-all" href="https://wa.me/5531996861334?text=Olá! Tenho interesse no Plano Profissional de R$ 197.">
-                        Garantir Vaga Promo
-                    </a>
-</div>
-<!-- Plan 3: Premium -->
-<div class="bg-surface-container-lowest p-8 rounded-[2rem] border neon-border neon-glow flex flex-col transition-transform hover:-translate-y-1">
-<h3 class="text-xl font-bold font-headline mb-2 text-on-surface">Escala Total</h3>
-<div class="flex items-baseline gap-1 mb-6">
-<span class="text-sm font-bold text-on-surface-variant">R$</span>
-<span class="text-4xl font-black text-on-surface">397</span>
-</div>
-<ul class="space-y-4 mb-10 flex-1">
-<li class="flex items-center gap-3 text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                            Funil de Vendas Completo
-                        </li>
-<li class="flex items-center gap-3 text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                            Setup de Tracking (Pixel/API)
-                        </li>
-<li class="flex items-center gap-3 text-sm text-on-surface-variant">
-<span class="material-symbols-outlined text-primary text-lg">check_circle</span>
-                            Análise de Heatmap inclusa
-                        </li>
-</ul>
-<a class="w-full py-4 text-center bg-surface-container-highest text-on-surface font-bold rounded-xl hover:bg-surface-variant transition-colors border border-primary/10" href="https://wa.me/5531996861334?text=Olá! Quero o Plano Escala Total para performance máxima.">
-                        Falar com Especialista
-                    </a>
-</div>
-</div>
-</div>
-</section>
-<!-- Social Proof Summary -->
-<section class="py-12 bg-surface text-center">
-<div class="max-w-4xl mx-auto px-8">
-<p class="text-2xl font-headline font-bold text-on-surface leading-tight">
-                "A AdsHive é a parceira estratégica que transformou nosso investimento em anúncios em lucro real. Mais de 150 projetos entregues com foco em ROI."
-            </p>
-<div class="mt-6 flex justify-center items-center gap-4">
-<div class="flex -space-x-3">
-<img alt="Client" class="w-10 h-10 rounded-full border-2 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc3x-vtlx1RTvhBSvaDRFx7WACTjXudOuSkY8NsKQme4aR_DeL7M2rW6btaOhq18lbekwqmmLSTRPr4inPaKyYGbIGvSGiRIvwiCViIvcany6OX6mIQU8wecrq-uffM8rRSs_bGCIFmYFg_enMD8Tf9Hvh5BgOrWMR_VNkRE0q71japkbjTe4hsxea0sCFbH8Ka61zKSsJZisp9xSM1Q42HhakSirVWpB2vPlkQtRdZYgOlX50XmSoFG8nc_vh9V0idmGXyZUJJuE"/>
-<img alt="Client" class="w-10 h-10 rounded-full border-2 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0dpyZei5zwzIGqqYDmQ89vNeCOMsxSAKwjEKa5OuJIyM8Md6uuDW6-7fH5JdzfUiC-LSc7o1VvEPLydoO96JKnQdVnZNCf06oOd-Dbdp6JoJFgVuOc11VVtgeN87gwFUrpS8i65jJDDTrXiRNjmk7CY7ot4M479LuO25dQUg3kJxn8DZOfayrKItVWmydA841XjCOXc2XXYEVijudhfxc2BlO5SwMWzvweWZTZzNwXTA2U3LYXWTY5SSO4HSxlbM4GnTS8WAUNso"/>
-<img alt="Client" class="w-10 h-10 rounded-full border-2 border-surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvN9yHIYj-3B7QzRIWX118td20Km9H2ll092wyoFmQ_3wE4XwNN2Z0FuDizuvb_dwwxEeUyVeNUz8hDz00IkKTh6SaEMslRmcJ5-7uLSsWgylqrurSYv4dt9K-r-ayZ2zIhOORQLdBSIYCvX-VxlHa967aZsRp4I0hGt-iUWbvxPzsZc2QQiVcUvqRjTHoTZultWddTQwf7Zm2wpXd559rELeeKUXW2FFeTl66O6BeiAkHq5tYQZs74n2Fvdb1G1AOmxsZkAVfHqE"/>
-</div>
-<span class="text-sm font-medium text-on-surface-variant">+150 clientes satisfeitos em todo o Brasil</span>
-</div>
-</div>
-</section>
-<!-- Final CTA Section -->
-<section class="py-24 px-8 overflow-hidden relative" id="contact">
-<div class="max-w-4xl mx-auto bg-primary rounded-[3rem] p-12 lg:p-20 text-center relative z-10 neon-glow-strong">
-<div class="inline-block px-6 py-2 bg-black/20 rounded-full text-white text-sm font-bold mb-8 uppercase tracking-widest backdrop-blur-sm">
-                Apenas 3 vagas disponíveis esta semana
-            </div>
-<h2 class="text-4xl lg:text-6xl font-extrabold font-headline text-white mb-8 tracking-tighter">Sua Landing Page pronta em 72h.</h2>
-<p class="text-xl text-white/90 mb-12 max-w-2xl mx-auto">Atendemos no máximo 10 projetos por semana para garantir o padrão de excelência AdsHive.</p>
-<div class="flex flex-col items-center gap-6">
-<a class="inline-flex items-center justify-center px-10 py-5 bg-white text-primary font-black rounded-2xl text-2xl shadow-2xl hover:scale-105 transition-all uppercase" href="https://wa.me/5531996861334">
-                    QUERO MEU DIAGNÓSTICO POR R$ 1
-                </a>
-<div class="flex items-center gap-2 text-white/70 text-sm font-medium">
-<span class="material-symbols-outlined text-sm">lock</span>
-                    Pagamento Seguro via Pix ou Cartão
+<div class="flex items-center gap-3 pt-4 border-t border-[#581198]/30">
+<div class="w-11 h-11 rounded-full bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center font-bold text-[#DB65F5]">
+                  RM
                 </div>
+<div>
+<strong class="font-headline-sm text-sm font-semibold text-white block">Ricardo Mendes</strong>
+<span class="font-body-sm text-xs text-[#B9AFC4]">CEO, Mendes Cosméticos</span>
+</div>
+</div>
+</div>
+<!-- Depoimento 2 -->
+<div class="p-8 rounded-2xl bg-[#120820] border border-[#581198] flex flex-col justify-between gap-6 shadow-md">
+<div class="flex flex-col gap-4">
+<div class="flex text-[#DB65F5]">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-sm sm:text-base text-white italic leading-relaxed">
+                  "Fiquei impressionada com o acabamento visual. Parece que contratei uma agência enorme de São Paulo que cobraria 5 mil reais. O suporte pelo WhatsApp foi nota 10!"
+                </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-[#581198]/30">
+<div class="w-11 h-11 rounded-full bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center font-bold text-[#DB65F5]">
+                  MS
+                </div>
+<div>
+<strong class="font-headline-sm text-sm font-semibold text-white block">Mariana Silva</strong>
+<span class="font-body-sm text-xs text-[#B9AFC4]">Especialista em Cílios &amp; Estética</span>
+</div>
+</div>
+</div>
+<!-- Depoimento 3 -->
+<div class="p-8 rounded-2xl bg-[#120820] border border-[#581198] flex flex-col justify-between gap-6 shadow-md">
+<div class="flex flex-col gap-4">
+<div class="flex text-[#DB65F5]">
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-lg" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-sm sm:text-base text-white italic leading-relaxed">
+                  "A AdsHive entendeu exatamente a psicologia do meu cliente. O processo foi rápido, sem enrolação e o resultado final transmitiu uma autoridade absurda para o meu produto."
+                </p>
+</div>
+<div class="flex items-center gap-3 pt-4 border-t border-[#581198]/30">
+<div class="w-11 h-11 rounded-full bg-[#6E0ED7]/30 border border-[#581198] flex items-center justify-center font-bold text-[#DB65F5]">
+                  LF
+                </div>
+<div>
+<strong class="font-headline-sm text-sm font-semibold text-white block">Lucas Ferraz</strong>
+<span class="font-body-sm text-xs text-[#B9AFC4]">Infoprodutor Digital &amp; Mentor</span>
+</div>
+</div>
+</div>
 </div>
 </div>
 </section>
-<!-- FAQ Section -->
-<section class="py-24 bg-surface-container-low" id="faq">
-<div class="max-w-4xl mx-auto px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl lg:text-5xl font-extrabold font-headline tracking-tight text-on-surface mb-6">Dúvidas Frequentes</h2>
-<p class="text-on-surface-variant">Transparência total sobre nosso processo de trabalho.</p>
+<!-- 7. FAQ COMPLETO (ACORDEÃO INTERATIVO) -->
+<section class="px-4 sm:px-6 lg:px-12 py-12 md:py-20 lg:py-24 bg-[#080311] border-t border-[#581198]/30 relative overflow-hidden"><div class="absolute inset-0 bg-gradient-to-r from-[#6E0ED7]/15 via-[#DB65F5]/10 to-transparent pointer-events-none"></div><div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-center relative z-10"><div class="lg:col-span-6 flex flex-col gap-5 sm:gap-6"><div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-[#120820] border border-[#581198] text-[#DB65F5] font-label-md text-xs sm:text-sm font-bold"><span class="material-symbols-outlined text-sm">warning</span><span>⚠️ CADA DIA SEM UMA PÁGINA É DINHEIRO DOADO</span></div><h2 class="font-headline-lg text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight">Pronto Para Transformar Seu Negócio Em Uma Máquina de Vendas?</h2><p class="font-body-lg text-sm sm:text-base lg:text-lg text-[#B9AFC4] leading-relaxed">Cada minuto sem uma landing page é mais um cliente fechando negócio com seu concorrente. Garanta seu projeto hoje mesmo com garantia e suporte total da AdsHive a partir de R$ 497,00.</p><div class="flex flex-col gap-2.5 sm:gap-3 pt-2"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#DB65F5] text-lg sm:text-xl">verified_user</span><span class="font-body-md text-xs sm:text-sm md:text-base text-white">Garantia incondicional de satisfação na entrega</span></div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#DB65F5] text-lg sm:text-xl">flash_on</span><span class="font-body-md text-xs sm:text-sm md:text-base text-white">Página pronta para campanhas de Meta Ads &amp; Google Ads</span></div><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[#DB65F5] text-lg sm:text-xl">lock</span><span class="font-body-md text-xs sm:text-sm md:text-base text-white">Pagamento seguro via Pix ou Cartão de Crédito</span></div></div><div class="pt-2 sm:pt-4"><a class="inline-flex items-center justify-center gap-3 min-h-[48px] sm:h-14 px-6 sm:px-8 rounded-lg bg-[#6E0ED7] hover:bg-[#9327E7] text-white font-headline-sm text-sm font-bold uppercase tracking-wider transition-all shadow-[0_0_25px_rgba(219,101,245,0.4)] hover:shadow-[0_0_35px_rgba(219,101,245,0.6)] w-full sm:w-auto text-center" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Quero%20garantir%20minha%20Landing%20Page%20com%20a%20AdsHive!" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-xl">chat</span><span>Falar Agora no WhatsApp</span></a></div></div><div class="lg:col-span-6 w-full"><div class="rounded-2xl bg-[#120820] border border-[#581198] p-5 sm:p-8 shadow-2xl flex flex-col gap-5 sm:gap-6 relative"><div class="flex flex-col gap-1"><h3 class="font-headline-md text-xl sm:text-2xl font-bold text-white">Solicite um Orçamento Express</h3><p class="font-body-sm text-xs sm:text-sm text-[#B9AFC4]">Preencha abaixo para receber nossa proposta estratégica em poucos minutos.</p></div><form class="flex flex-col gap-3.5 sm:gap-4" id="lead-form"><div class="flex flex-col gap-1.5"><label class="font-label-md text-xs sm:text-sm text-white font-semibold" for="form-name">Nome Completo</label><input class="w-full min-h-[44px] px-3.5 sm:px-4 rounded-lg bg-[#080311] border border-[#581198] text-white font-body-md text-base placeholder:text-[#B9AFC4]/50 focus:outline-none focus:border-[#DB65F5] focus:ring-1 focus:ring-[#DB65F5]" id="form-name" placeholder="Ex: Rodrigo Pereira" required="" type="text"></div><div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 sm:gap-4"><div class="flex flex-col gap-1.5"><label class="font-label-md text-xs sm:text-sm text-white font-semibold" for="form-whatsapp">WhatsApp com DDD</label><input class="w-full min-h-[44px] px-3.5 sm:px-4 rounded-lg bg-[#080311] border border-[#581198] text-white font-body-md text-base placeholder:text-[#B9AFC4]/50 focus:outline-none focus:border-[#DB65F5] focus:ring-1 focus:ring-[#DB65F5]" id="form-whatsapp" placeholder="(11) 99999-9999" required="" type="tel"></div><div class="flex flex-col gap-1.5"><label class="font-label-md text-xs sm:text-sm text-white font-semibold" for="form-plan">Plano Desejado</label><select class="w-full min-h-[44px] px-3.5 sm:px-4 rounded-lg bg-[#080311] border border-[#581198] text-white font-body-md text-base focus:outline-none focus:border-[#DB65F5] focus:ring-1 focus:ring-[#DB65F5]" id="form-plan"><option value="Plano Profissional">Plano Profissional (Recomendado)</option><option value="Plano Básico">Plano Básico</option><option value="Plano Premium">Plano Premium</option><option value="Projeto Personalizado">Projeto Personalizado</option></select></div></div><div class="flex flex-col gap-1.5"><label class="font-label-md text-xs sm:text-sm text-white font-semibold" for="form-desc">Qual o seu negócio e o que você vende?</label><textarea class="w-full p-3.5 sm:p-4 rounded-lg bg-[#080311] border border-[#581198] text-white font-body-md text-base placeholder:text-[#B9AFC4]/50 focus:outline-none focus:border-[#DB65F5] focus:ring-1 focus:ring-[#DB65F5] resize-none" id="form-desc" placeholder="Ex: Sou dentista em Belo Horizonte e quero mais agendamentos de implantes..." rows="3"></textarea></div><button class="w-full min-h-[48px] py-3.5 px-6 rounded-lg bg-[#6E0ED7] hover:bg-[#9327E7] text-white font-headline-sm text-sm font-bold uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(219,101,245,0.4)] flex items-center justify-center gap-2" type="submit"><span>Enviar Solicitação Agora</span><span class="material-symbols-outlined text-lg">send</span></button><span class="hidden text-center font-label-md text-xs text-[#DB65F5] font-bold" id="form-feedback">✅ Redirecionando com seus dados para o atendimento prioritário...</span></form></div></div></div></section>
+<!-- 8. CTA FINAL E FORMULÁRIO RÁPIDO DE ORÇAMENTO -->
+<section class="px-6 lg:px-12 py-16 lg:py-24 bg-[#080311] border-t border-[#581198]/30 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-[#6E0ED7]/15 via-[#DB65F5]/10 to-transparent pointer-events-none"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<!-- Left Urgent Pitch -->
+<div class="lg:col-span-6 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-[#120820] border border-[#581198] text-[#DB65F5] font-label-md text-xs sm:text-sm font-bold"><span class="material-symbols-outlined text-sm">warning</span>
+              <span>⚠️ CADA DIA SEM UMA PÁGINA PROFISSIONAL É DINHEIRO DOADO AO CONCORRENTE</span></div>
+<h2 class="font-headline-lg text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+              Pronto Para Transformar Seu Negócio Em Uma Máquina de Vendas?
+            </h2>
+<p class="font-body-lg text-base sm:text-lg text-[#B9AFC4] leading-relaxed">
+              Cada minuto sem uma landing page é mais um cliente fechando negócio com seu concorrente. Garanta seu projeto hoje mesmo com garantia e suporte total da AdsHive a partir de R$ 497,00.
+            </p>
+<div class="flex flex-col gap-3 pt-2">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#DB65F5]">verified_user</span>
+<span class="font-body-md text-sm sm:text-base text-white">Garantia incondicional de satisfação na entrega</span>
 </div>
-<div class="space-y-4">
-<details class="group bg-surface-container-lowest rounded-2xl border neon-border shadow-sm">
-<summary class="flex items-center justify-between p-6 cursor-pointer list-none outline-none">
-<span class="text-lg font-bold font-headline text-on-surface group-hover:text-primary transition-colors">Como funciona a garantia de retrabalho?</span>
-<span class="material-symbols-outlined text-primary transition-transform duration-300 rotate-icon">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-on-surface-variant leading-relaxed">
-                        Nós monitoramos o desempenho inicial. Se em 7 dias após subir os anúncios a página não performar acima da média do seu nicho em CTR de saída ou conversão, nossa equipe de estratégia revisa todo o fluxo e refaz a copy sem nenhum custo extra para você.
-                    </div>
-</details>
-<details class="group bg-surface-container-lowest rounded-2xl border neon-border shadow-sm">
-<summary class="flex items-center justify-between p-6 cursor-pointer list-none outline-none">
-<span class="text-lg font-bold font-headline text-on-surface group-hover:text-primary transition-colors">O Diagnóstico de R$ 1 dá direito a quê?</span>
-<span class="material-symbols-outlined text-primary transition-transform duration-300 rotate-icon">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-on-surface-variant leading-relaxed">
-                        É nossa porta de entrada. Você paga R$ 1 via Pix, preenche um briefing rápido e nós desenhamos o "Hero" (primeira seção) da sua página como demonstração. Além disso, agendamos uma call de 10 min para alinhar a estratégia. Se fechar qualquer plano, esse R$ 1 vira desconto.
-                    </div>
-</details>
-<details class="group bg-surface-container-lowest rounded-2xl border neon-border shadow-sm">
-<summary class="flex items-center justify-between p-6 cursor-pointer list-none outline-none">
-<span class="text-lg font-bold font-headline text-on-surface group-hover:text-primary transition-colors">Consigo alterar o site depois?</span>
-<span class="material-symbols-outlined text-primary transition-transform duration-300 rotate-icon">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-on-surface-variant leading-relaxed">
-                        Sim. Entregamos o acesso completo para você. Nossas páginas são construídas em estruturas fáceis de editar, mas também oferecemos suporte vitalício via WhatsApp para dúvidas técnicas.
-                    </div>
-</details>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#DB65F5]">flash_on</span>
+<span class="font-body-md text-sm sm:text-base text-white">Página pronta para campanhas de Meta Ads &amp; Google Ads</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#DB65F5]">lock</span>
+<span class="font-body-md text-sm sm:text-base text-white">Pagamento seguro via Pix ou Cartão de Crédito</span>
+</div>
+</div>
+<div class="pt-4">
+<a class="inline-flex items-center gap-3 h-14 px-8 rounded-lg bg-[#6E0ED7] hover:bg-[#9327E7] text-white font-headline-sm text-sm font-bold uppercase tracking-wider transition-all shadow-[0_0_25px_rgba(219,101,245,0.4)] hover:shadow-[0_0_35px_rgba(219,101,245,0.6)]" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Quero%20garantir%20minha%20Landing%20Page%20com%20a%20AdsHive!" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-xl">chat</span>
+<span>Falar Agora no WhatsApp</span>
+</a>
+</div>
+</div>
+<!-- Right Fast Budget Form -->
+<div class="lg:col-span-6">
+<div class="rounded-2xl bg-[#120820] border border-[#581198] p-8 shadow-2xl flex flex-col gap-6 relative">
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-md text-2xl font-bold text-white">Solicite um Orçamento Express</h3>
+<p class="font-body-sm text-sm text-[#B9AFC4]">Preencha abaixo para receber nossa proposta estratégica em poucos minutos.</p>
+</div>
+<form class="flex flex-col gap-4" id="lead-form">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-xs sm:text-sm text-white font-semibold" for="form-name">Nome Completo</label>
+<input class="w-full h-11 px-4 rounded-lg bg-[#080311] border border-[#581198] text-white font-body-md text-sm placeholder:text-[#B9AFC4]/50 focus:outline-none focus:border-[#DB65F5] focus:ring-1 focus:ring-[#DB65F5]" id="form-name" placeholder="Ex: Rodrigo Pereira" required="" type="text">
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-xs sm:text-sm text-white font-semibold" for="form-whatsapp">WhatsApp com DDD</label>
+<input class="w-full h-11 px-4 rounded-lg bg-[#080311] border border-[#581198] text-white font-body-md text-sm placeholder:text-[#B9AFC4]/50 focus:outline-none focus:border-[#DB65F5] focus:ring-1 focus:ring-[#DB65F5]" id="form-whatsapp" placeholder="(11) 99999-9999" required="" type="tel">
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-xs sm:text-sm text-white font-semibold" for="form-plan">Plano Desejado</label>
+<select class="w-full h-11 px-4 rounded-lg bg-[#080311] border border-[#581198] text-white font-body-md text-sm focus:outline-none focus:border-[#DB65F5] focus:ring-1 focus:ring-[#DB65F5]" id="form-plan">
+<option value="Plano Profissional">Plano Profissional (Recomendado)</option>
+<option value="Plano Básico">Plano Básico</option>
+<option value="Plano Premium">Plano Premium</option>
+<option value="Projeto Personalizado">Projeto Personalizado</option>
+</select>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-xs sm:text-sm text-white font-semibold" for="form-desc">Qual o seu negócio e o que você vende?</label>
+<textarea class="w-full p-4 rounded-lg bg-[#080311] border border-[#581198] text-white font-body-md text-sm placeholder:text-[#B9AFC4]/50 focus:outline-none focus:border-[#DB65F5] focus:ring-1 focus:ring-[#DB65F5] resize-none" id="form-desc" placeholder="Ex: Sou dentista em Belo Horizonte e quero mais agendamentos de implantes..." rows="3"></textarea>
+</div>
+<button class="w-full h-13 py-3.5 px-6 rounded-lg bg-[#6E0ED7] hover:bg-[#9327E7] text-white font-headline-sm text-sm font-bold uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(219,101,245,0.4)] flex items-center justify-center gap-2" type="submit">
+<span>Enviar Solicitação Agora</span>
+<span class="material-symbols-outlined text-lg">send</span>
+</button>
+<span class="hidden text-center font-label-md text-xs text-[#DB65F5] font-bold" id="form-feedback">
+                  ✅ Redirecionando com seus dados para o atendimento prioritário...
+                </span>
+</form>
+</div>
 </div>
 </div>
 </section>
+<!-- PERSISTENT FLOATING WHATSAPP BUTTON -->
+<aside class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-3"><a aria-label="Conversar no WhatsApp" class="group relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] text-white shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-[0_6px_32px_rgba(37,211,102,0.65)]" href="https://wa.me/5531996861334?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20as%20landing%20pages%20da%20AdsHive." rel="noopener noreferrer" target="_blank"><span class="absolute -inset-1 rounded-full bg-[#25D366] opacity-40 animate-ping pointer-events-none"></span><span class="absolute -top-1 -right-1 flex h-4 w-4"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#DB65F5] opacity-75"></span><span class="relative inline-flex rounded-full h-4 w-4 bg-[#DB65F5] border-2 border-[#080311]"></span></span><svg class="w-8 h-8 sm:w-9 sm:h-9 fill-current text-white relative z-10" viewBox="0 0 24 24"><path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.978-.276-.1-.476-.15-.676.15-.2.3-.776.978-.952 1.178-.175.2-.351.226-.652.075-.3-.15-1.268-.468-2.416-1.492-.894-.798-1.498-1.784-1.674-2.085-.175-.3-.019-.462.131-.611.136-.134.301-.351.451-.527.151-.175.2-.3.301-.5.1-.2.05-.375-.025-.525-.075-.15-.676-1.63-.926-2.23-.244-.585-.492-.506-.676-.515l-.577-.01c-.2 0-.526.075-.802.375-.276.3-1.053 1.028-1.053 2.507 0 1.478 1.078 2.905 1.228 3.106.151.2 2.122 3.24 5.14 4.544.718.31 1.279.495 1.716.634.721.23 1.378.197 1.897.12.578-.087 1.78-.727 2.03-1.43.251-.703.251-1.305.176-1.43-.075-.125-.276-.2-.577-.35zM12.04 2C6.516 2 2.028 6.488 2.028 12.012c0 1.942.556 3.753 1.523 5.286L2 22l4.843-1.512c1.472.88 3.18 1.385 5.017 1.385 5.524 0 10.012-4.488 10.012-10.012S17.384 2 12.04 2zm0 18.258c-1.61 0-3.11-.476-4.385-1.3l-.314-.204-3.25 1.015 1.045-3.14-.225-.333a8.218 8.218 0 0 1-1.328-4.464c0-4.55 3.702-8.252 8.252-8.252s8.252 3.702 8.252 8.252c0 4.55-3.702 8.272-8.492 8.426z"></path></svg></a></aside>
+<!-- SCRIPTS -->
+<script>
+        // FAQ Accordion Toggle
+        document.querySelectorAll('.faq-btn').forEach(btn => {
+          btn.addEventListener('click', () => {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('.material-symbols-outlined');
+            const isOpen = !content.classList.contains('hidden');
+            
+            // Close others
+            document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+            document.querySelectorAll('.faq-btn .material-symbols-outlined').forEach(i => i.style.transform = 'rotate(0deg)');
+
+            if (!isOpen) {
+              content.classList.remove('hidden');
+              icon.style.transform = 'rotate(180deg)';
+            }
+          });
+        });
+
+        // Fast Form submission direct to WhatsApp bridge
+        const form = document.getElementById('lead-form');
+        if (form) {
+          form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const whatsapp = document.getElementById('form-whatsapp').value;
+            const plan = document.getElementById('form-plan').value;
+            const desc = document.getElementById('form-desc').value;
+            const feedback = document.getElementById('form-feedback');
+            
+            feedback.classList.remove('hidden');
+
+            const message = `Olá! Meu nome é ${encodeURIComponent(name)}, meu WhatsApp é ${encodeURIComponent(whatsapp)}. Tenho interesse no ${encodeURIComponent(plan)}. Meu projeto: ${encodeURIComponent(desc)}`;
+            const zapUrl = `https://wa.me/5531996861334?text=${message}`;
+
+            setTimeout(() => {
+              window.open(zapUrl, '_blank');
+            }, 800);
+          });
+        }
+      </script>
+</div>
 </main>
-<!-- Footer -->
-<footer class="w-full border-t border-outline-variant/20 bg-surface-container-lowest">
-<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 max-w-7xl mx-auto gap-6">
+<!-- FOOTER -->
+<footer class="w-full bg-[#080311] border-t border-[#581198]/40 mt-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+<div class="lg:col-span-2 flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<img alt="AdsHive Logo" class="w-9 h-9 object-contain rounded-full shadow-[0_0_15px_rgba(219,101,245,0.3)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOlPbSazhK6DUFkIONzzVHXicddsyb-NijbXBYCpjkxmuP0nD7H9jTqKtQyArAYP3eNPFlztbEWkPTLAcNyFJGS3mCfMi76Vor5HohkqK12W6YXf94Qz4AKe_NY4MOVEHCYbNqrorEneMlho8gC8I6H3Nj9V2Zp23ZosQE-JIUCM4FzvwNEi5Q_mKLSEyKn8VhY0Os7sVEgvJ_cC-B-YAo1OoG12Tj6UpYMytnzXEDI5vLYeH0Zit-GA">
+<span class="font-headline-sm text-lg text-white font-extrabold">Ads<span class="text-[#DB65F5]">Hive</span></span>
+</div>
+<p class="font-body-md text-sm text-[#B9AFC4] max-w-sm">
+            Especialistas na criação de landing pages focadas em altíssima conversão e gestão analítica de tráfego pago para escalar resultados.
+          </p>
+<div class="flex items-center gap-2 pt-2">
+<span class="flex items-center justify-center w-9 h-9 rounded-lg bg-[#120820] border border-[#581198] text-[#DB65F5]"><span class="material-symbols-outlined text-lg">campaign</span></span>
+<span class="flex items-center justify-center w-9 h-9 rounded-lg bg-[#120820] border border-[#581198] text-[#DB65F5]"><span class="material-symbols-outlined text-lg">monitoring</span></span>
+<span class="flex items-center justify-center w-9 h-9 rounded-lg bg-[#120820] border border-[#581198] text-[#DB65F5]"><span class="material-symbols-outlined text-lg">rocket_launch</span></span>
+</div>
+</div>
 <div class="flex flex-col gap-2">
-<span class="text-xl font-black text-primary font-headline">AdsHive</span>
-<p class="font-body text-sm leading-6 text-on-surface-variant max-w-xs">Especialistas em performance e design editorial de alta conversão.</p>
+<span class="font-label-md text-xs text-white uppercase tracking-wider font-bold mb-2">Navegação</span>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#vantagens">Benefícios</a>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#vantagens">Vantagens Competitivas</a>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#planos">Planos &amp; Preços</a>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#portfolio">Cases &amp; Portfólio</a>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#faq">Dúvidas Frequentes</a>
 </div>
-<div class="flex gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Termos</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Privacidade</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="https://wa.me/5531996861334">Suporte</a>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-xs text-white uppercase tracking-wider font-bold mb-2">Legal &amp; Termos</span>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#">Termos de Uso</a>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#">Política de Privacidade</a>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#">Conformidade LGPD</a>
+<a class="font-body-md text-sm text-[#B9AFC4] hover:text-[#DB65F5] transition-colors" href="#">Garantia &amp; SLA</a>
 </div>
-<div class="text-on-surface-variant text-sm">
-            © 2024 AdsHive. Performance First.
-        </div>
+<div class="flex flex-col gap-2">
+<span class="font-label-md text-xs text-white uppercase tracking-wider font-bold mb-2">Canais de Contato</span>
+<div class="flex items-center gap-2 text-[#B9AFC4]">
+<span class="material-symbols-outlined text-[#DB65F5] text-sm">mail</span>
+<span class="font-body-md text-sm">contato@adshive.com.br</span>
+</div>
+<div class="flex items-center gap-2 text-[#B9AFC4]">
+<span class="material-symbols-outlined text-[#DB65F5] text-sm">call</span>
+<span class="font-body-md text-sm">+55 (31) 99686-1334</span>
+</div>
+<div class="flex items-center gap-2 text-[#B9AFC4]">
+<span class="material-symbols-outlined text-[#DB65F5] text-sm">schedule</span>
+<span class="font-body-md text-sm">Seg - Sex: 09h às 18h</span>
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-[#581198]/30 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="font-body-sm text-xs text-[#B9AFC4]">© 2025 AdsHive Performance Marketing Ltda. Todos os direitos reservados.</p>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-xs text-[#DB65F5]">Landing Pages de Alta Conversão</span>
+<span class="text-[#581198]">•</span>
+<span class="font-body-sm text-xs text-white">Gestão de Tráfego de Precisão</span>
+</div>
+</div>
 </div>
 </footer>
+
+
+
+
+
+
+
+
 </body></html>
